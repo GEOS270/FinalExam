@@ -71,7 +71,7 @@ You can answer these questions briefly in sentence or bullet point format.
 
 ### Autocorrelation
 
-What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?
+What is spatial auto-correlation? What are two tools we covered that we can use to create a continuous field from discrete point observations of phenomena that exhibit positive spatial auto-correlation?
 
 
 
@@ -90,7 +90,7 @@ Compare and contrast the raster calculator and weighted overlay tools.  Which of
 ### Normalization
 
 
-What is the purpose of data normalization and how do you do it? List two examples from lab where we normalized data and why we needed to do it?
+What is the data normalization? When/why might you want do it? List two examples from lab where we normalized data and why we needed to do it?
 
 
 
@@ -122,7 +122,7 @@ How would you use the select by attribute tool in ArcGIS Pro to select all the d
 
 
 
-### File Size vs. Resolution
+### Resolution vs. File Size
     
 You have two raster images that cover the exact same area (same extent).  Raster image 'A' is a DEM (one band) and a cell size of 100 m.  Raster image 'B' is an RGB color image (three bands) and a cell size of 25 m.  If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?",
 
@@ -134,7 +134,7 @@ You have two raster images that cover the exact same area (same extent).  Raster
 
 # Flowchart 
 
-Create a flow chart to represent the analysis steps you would need to conduct to answer the following question. Either draw your flowchart by hand, use this [online tool](https://app.diagrams.net/), or use another software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.
+Create a flow chart outlining how you would use GIS to answer the following prompt. Either draw your flowchart by hand, use this [online tool](https://app.diagrams.net/), or use another software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.
 
 * Save the file as either a .pdf, png, or jpg and name it as follows: **StudentNumber_Flowchart.pdf**
   * If your student number were "10011001", your file would be named: **10011001_FlowChart.pdf**, **10011001_FlowChart.png**, or **10011001_FlowChart.jpg**, depending on the file type you chose.
