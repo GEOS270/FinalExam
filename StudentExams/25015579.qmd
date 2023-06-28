@@ -26,13 +26,13 @@ Good Luck!
 
 This section consists of an essay and a handful of short answer questions.
 
-* For your written section, type up your essay and short answers response and save them **in one document** as .pdf.  Name the file: **StudentNumber_WrittenRespones.pdf**
+* Type up your essay and short answers response and save them in one **.pdf** document .  Name the file: **StudentNumber_WrittenRespones.pdf**
     * If your student number were "10011001", your file would be named: **10011001_WrittenRespones.pdf**
 
 
 ## Essay
 
-Pick **one** of the essays below to answer.  Make sure to list the number of the essay you are choosing to answer.  Feel free to include diagrams/figures/sketches if applicable, but do not feel obligated to do so.
+Pick **one** of the essay prompts below and respond to it.  Make sure to list the specify which essay you are choosing to answer.  Feel free to include diagrams/figures/sketches if applicable, but do not feel obligated to do so.
 
 
 
@@ -95,6 +95,20 @@ What is spatial auto-correlation and what are two analysis tools we covered that
 
 The table below contains a list records for different trees in an area.  The select by attribute tool can be used to query records in a table. For example, if I needed to find all the maple trees , I could select:\n\n<p><strong>Where:</strong> Species = Maple</p>
 
+
+
+
+How would you use the select by attribute tool in ArcGIS Pro to select all the birch and pine trees over 35 yr old from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
+
+
+|  A  | B | C |
+|-----|--:|--:|
+|Birch|  5| 50|
+|Birch|  6| 75|
+|Pine | 20| 35|
+|Pine | 25| 45|
+|Oak  | 10| 30|
+|Maple| 35| 60|
 
 
 
