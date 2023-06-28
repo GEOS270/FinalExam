@@ -108,7 +108,7 @@ The table below contains a list records for different trees in an area.  The sel
 How would you use the select by attribute tool in ArcGIS Pro to select all the dogwood and pine trees over 5 m tall from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
 
 
-|   A   | B | C |
+|   Species   | Age | Height |
 |-------|--:|--:|
 |Dogwood|  5| 50|
 |Dogwood|  6| 75|
@@ -157,7 +157,7 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-|     A      |   B   | C  |         D          |                            E                             |
+|        Dataset         |   Data Type   | File type  |      Coordinate System      |                             Attributes                             |
 |------------|-------|----|--------------------|----------------------------------------------------------|
 |Airstrips   |Points |.csv|WGS 1984            |Locations of existing air strips                          |
 |DEM         |Raster |.tif|BC Albers Equal Area|Elevation                                                 |
@@ -252,7 +252,7 @@ An attribute [  <sub>4.0</sub>  ] contains non-spatial data, that is linked to s
 Random sampling is a/an [  <sub>5.0</sub>  ] method for collecting spatial information.  Stratified random sampling and cluster sampling are [  <sub>5.1</sub>  ] methods for collecting spatial information that are designed to help address some of the downsides of random sampling.
 
 **6**	
-Resolution is a branch of your [  <sub>6.0</sub>  ], scale is a property of your [  <sub>6.1</sub>  ].
+Resolution is a property of your [  <sub>6.0</sub>  ], scale is a property of your [  <sub>6.1</sub>  ].
 
 **7**	
 [  <sub>7.0</sub>  ] is the process of assigning spatial [  <sub>7.1</sub>  ] to images like scanned historical maps.

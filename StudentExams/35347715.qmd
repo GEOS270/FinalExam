@@ -108,7 +108,7 @@ The table below contains a list records for different trees in an area.  The sel
 How would you use the select by attribute tool in ArcGIS Pro to select all the dogwood and pine trees over 5 m tall from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
 
 
-|   A   | B | C |
+|   Species   | Age | Height |
 |-------|--:|--:|
 |Dogwood|  5| 50|
 |Dogwood|  6| 75|
@@ -157,7 +157,7 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-|       A       |  B   |  C  |         D          |                              E                               |
+|        Dataset         |   Data Type   | File type  |      Coordinate System      |                             Attributes                             |
 |---------------|------|-----|--------------------|--------------------------------------------------------------|
 |Precipitation  |Raster|.tiff|BC Albers Equal Area|Mean Annual Precipitation                                     |
 |Temperature    |Raster|.tiff|BC Albers Equal Area|Mean Winter Temperature                                       |
@@ -239,7 +239,7 @@ Monthly Income
 Enter the words or phrases that best complete the statement.  Blanks are labelled with with an numeric code in brackets (e.g., [11.1]) which has a corresponding slot in your answer sheet.  Spelling does not need to be exact, but **make sure** to type out acronyms/abbreviations. For example, if the answer is *Geographic Information Science* but you entered **GIS**, your answer will be marked as incorrect.
 
 **2**	
-Resolution is a branch of your [  <sub>2.0</sub>  ], scale is a property of your [  <sub>2.1</sub>  ].
+Resolution is a property of your [  <sub>2.0</sub>  ], scale is a property of your [  <sub>2.1</sub>  ].
 
 **3**	
 The [  <sub>3.0</sub>  ] arises when we aggregate individual data values into larger [  <sub>3.1</sub>  ] with arbitrary boundaries.

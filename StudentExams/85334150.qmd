@@ -106,7 +106,7 @@ The table below contains a list records for different trees in an area.  The sel
 How would you use the select by attribute tool in ArcGIS Pro to select all the birch and pine trees over 35 yr old from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
 
 
-|  A  | B | C |
+|   Species   | Age | Height |
 |-----|--:|--:|
 |Birch|  5| 50|
 |Birch|  6| 75|
@@ -155,9 +155,7 @@ The Toronto Blue Jays are considering replacing the Rogers Centre with a new sta
 
 You have the following data to work with. Create a flowchart to show how you would go about identifying potential stadium locations.
 
-
-
-|        A         |   B   | C  |      D      |                             E                             |
+|        Dataset         |   Data Type   | File type  |      Coordinate System      |                             Attributes                             |
 |------------------|-------|----|-------------|-----------------------------------------------------------|
 |Zoning            |Polygon|.shp|UTM Zone 17 N|Zoning Class(Residential / Commercial / Industrial / etc.) |
 |Heritage buildings|Points |.csv|WGS 1984     |Age / Address / Owner                                      |
@@ -245,7 +243,7 @@ NDVI is an index derived from satellite [  <sub>2.0</sub>  ] that can be used to
 The [  <sub>3.0</sub>  ] arises when we aggregate individual data values into larger [  <sub>3.1</sub>  ] with arbitrary boundaries.
 
 **4**	
-Resolution is a branch of your [  <sub>4.0</sub>  ], scale is a property of your [  <sub>4.1</sub>  ].
+Resolution is a property of your [  <sub>4.0</sub>  ], scale is a property of your [  <sub>4.1</sub>  ].
 
 **5**	
 [  <sub>5.0</sub>  ] is a technique that assigns spatial [  <sub>5.1</sub>  ] to text-based descriptions of locations (eg. street addresses).

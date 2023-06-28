@@ -106,7 +106,7 @@ The table below contains a list records for different trees in an area.  The sel
 How would you use the select by attribute tool in ArcGIS Pro to select all the dogwood and pine trees over 5 m tall from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
 
 
-|   A   | B | C |
+|   Species   | Age | Height |
 |-------|--:|--:|
 |Dogwood|  5| 50|
 |Dogwood|  6| 75|
@@ -155,7 +155,7 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-|       A       |  B   |  C  |         D          |                              E                               |
+|        Dataset         |   Data Type   | File type  |      Coordinate System      |                             Attributes                             |
 |---------------|------|-----|--------------------|--------------------------------------------------------------|
 |Precipitation  |Raster|.tiff|BC Albers Equal Area|Mean Annual Precipitation                                     |
 |Temperature    |Raster|.tiff|BC Albers Equal Area|Mean Winter Temperature                                       |

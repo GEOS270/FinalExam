@@ -106,7 +106,7 @@ The table below contains a list records for different trees in an area.  The sel
 How would you use the select by attribute tool in ArcGIS Pro to select all the birch and pine trees over 35 yr old from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
 
 
-|  A  | B | C |
+|   Species   | Age | Height |
 |-----|--:|--:|
 |Birch|  5| 50|
 |Birch|  6| 75|
@@ -157,7 +157,7 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-|       A       |  B   |  C  |         D          |                              E                               |
+|        Dataset         |   Data Type   | File type  |      Coordinate System      |                             Attributes                             |
 |---------------|------|-----|--------------------|--------------------------------------------------------------|
 |Precipitation  |Raster|.tiff|BC Albers Equal Area|Mean Annual Precipitation                                     |
 |Temperature    |Raster|.tiff|BC Albers Equal Area|Mean Winter Temperature                                       |
@@ -257,7 +257,7 @@ Spatial [  <sub>6.0</sub>  ] is the process of estimating the values between poi
 Random sampling is a/an [  <sub>7.0</sub>  ] method for collecting spatial information.  Stratified random sampling and cluster sampling are [  <sub>7.1</sub>  ] methods for collecting spatial information that are designed to help address some of the downsides of random sampling.
 
 **8**	
-Resolution is a branch of your [  <sub>8.0</sub>  ], scale is a property of your [  <sub>8.1</sub>  ].
+Resolution is a property of your [  <sub>8.0</sub>  ], scale is a property of your [  <sub>8.1</sub>  ].
 
 
 

@@ -107,7 +107,7 @@ The table below contains a list records for different trees in an area.  The sel
 How would you use the select by attribute tool in ArcGIS Pro to select all the dogwood and pine trees over 5 m tall from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
 
 
-|   A   | B | C |
+|   Species   | Age | Height |
 |-------|--:|--:|
 |Dogwood|  5| 50|
 |Dogwood|  6| 75|
@@ -156,7 +156,7 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-|       A       |  B   |  C  |         D          |                              E                               |
+|        Dataset         |   Data Type   | File type  |      Coordinate System      |                             Attributes                             |
 |---------------|------|-----|--------------------|--------------------------------------------------------------|
 |Precipitation  |Raster|.tiff|BC Albers Equal Area|Mean Annual Precipitation                                     |
 |Temperature    |Raster|.tiff|BC Albers Equal Area|Mean Winter Temperature                                       |
@@ -244,7 +244,7 @@ Ptolemy's Geographia is the first known example of a(n) [  <sub>2.0</sub>  ]. It
 NDVI is an index derived from satellite [  <sub>3.0</sub>  ] that can be used to gauge the health/density of [  <sub>3.1</sub>  ].
 
 **4**	
-Resolution is a branch of your [  <sub>4.0</sub>  ], scale is a property of your [  <sub>4.1</sub>  ].
+Resolution is a property of your [  <sub>4.0</sub>  ], scale is a property of your [  <sub>4.1</sub>  ].
 
 **5**	
 Spatial [  <sub>5.0</sub>  ] is the process of estimating the values between point observations to create a continuous surface. A common method known as [  <sub>5.1</sub>  ] uses a function to estimate cell values based on their proximity to a set of known point observations.
