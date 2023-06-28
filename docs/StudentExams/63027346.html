@@ -60,7 +60,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -99,25 +98,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#essay" id="toc-essay" class="nav-link active" data-scroll-target="#essay">Essay</a>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a>
+  <ul class="collapse">
+  <li><a href="#written-responses" id="toc-written-responses" class="nav-link" data-scroll-target="#written-responses">Written Responses</a></li>
+  <li><a href="#flowchart" id="toc-flowchart" class="nav-link" data-scroll-target="#flowchart">Flowchart</a></li>
+  <li><a href="#mixed-questions-types" id="toc-mixed-questions-types" class="nav-link" data-scroll-target="#mixed-questions-types">Mixed Questions Types</a></li>
+  </ul></li>
+  <li><a href="#written-responses-1" id="toc-written-responses-1" class="nav-link" data-scroll-target="#written-responses-1">Written Responses</a>
+  <ul class="collapse">
+  <li><a href="#essay" id="toc-essay" class="nav-link" data-scroll-target="#essay">Essay</a>
   <ul class="collapse">
   <li><a href="#coordinate-systems" id="toc-coordinate-systems" class="nav-link" data-scroll-target="#coordinate-systems">Coordinate Systems</a></li>
   <li><a href="#data-models" id="toc-data-models" class="nav-link" data-scroll-target="#data-models">Data Models</a></li>
   </ul></li>
-  <li><a href="#shortanswer" id="toc-shortanswer" class="nav-link" data-scroll-target="#shortanswer">ShortAnswer</a>
+  <li><a href="#short-answer" id="toc-short-answer" class="nav-link" data-scroll-target="#short-answer">Short Answer</a>
   <ul class="collapse">
   <li><a href="#raster-tools" id="toc-raster-tools" class="nav-link" data-scroll-target="#raster-tools">Raster Tools</a></li>
+  <li><a href="#spatial-similarity" id="toc-spatial-similarity" class="nav-link" data-scroll-target="#spatial-similarity">Spatial Similarity</a></li>
+  <li><a href="#autocorrelation" id="toc-autocorrelation" class="nav-link" data-scroll-target="#autocorrelation">Autocorrelation</a></li>
   <li><a href="#select-by-attribute" id="toc-select-by-attribute" class="nav-link" data-scroll-target="#select-by-attribute">Select by Attribute</a></li>
+  <li><a href="#file-size-vs.-resolution" id="toc-file-size-vs.-resolution" class="nav-link" data-scroll-target="#file-size-vs.-resolution">File Size vs.&nbsp;Resolution</a></li>
   </ul></li>
-  <li><a href="#shortanswer-numeric" id="toc-shortanswer-numeric" class="nav-link" data-scroll-target="#shortanswer-numeric">ShortAnswer Numeric</a></li>
-  <li><a href="#flow-chart" id="toc-flow-chart" class="nav-link" data-scroll-target="#flow-chart">Flow Chart</a>
+  </ul></li>
+  <li><a href="#flowchart-1" id="toc-flowchart-1" class="nav-link" data-scroll-target="#flowchart-1">Flowchart</a>
   <ul class="collapse">
   <li><a href="#locations-for-a-cherry-orchard" id="toc-locations-for-a-cherry-orchard" class="nav-link" data-scroll-target="#locations-for-a-cherry-orchard">Locations for a Cherry Orchard</a></li>
   </ul></li>
+  <li><a href="#mixed-questions-types-1" id="toc-mixed-questions-types-1" class="nav-link" data-scroll-target="#mixed-questions-types-1">Mixed Questions Types</a>
+  <ul class="collapse">
   <li><a href="#matching" id="toc-matching" class="nav-link" data-scroll-target="#matching">Matching</a></li>
   <li><a href="#fill-in-the-blanks" id="toc-fill-in-the-blanks" class="nav-link" data-scroll-target="#fill-in-the-blanks">Fill in the Blanks</a></li>
   <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a></li>
   <li><a href="#true-false" id="toc-true-false" class="nav-link" data-scroll-target="#true-false">True False</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -141,105 +154,90 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is the final exam for student number: 63027346. <strong>Make sure</strong> this is exam for your student number. Do not complete someone else’s exam. The exam has five parts: an essay section, two short answer sections, a flowchart section, and an automated response section. You will upload each part as a separate document to the exam’s canvas page.</p>
+<p>This is the final exam for student number: <strong>63027346</strong>. Confirm your student number is correct before proceeding. <strong>Do not complete someone else’s exam.</strong></p>
+<section id="instructions" class="level1">
+<h1>Instructions</h1>
+<p>The exam is “open book”, you can reference any resources from the class or online to work through the questions. However, all the work MUST be in your own words. You can not copy from online resources or classmates. Plagiarism will be taken very seriously and could result in failing the exam.</p>
+<p>The exam has <strong>three parts</strong>. You will upload each part as a separate document to the exam’s canvas page.</p>
+<section id="written-responses" class="level3">
+<h3 class="anchored" data-anchor-id="written-responses">Written Responses</h3>
 <ul>
+<li><p>Consists of an essay and a handful of short answer questions</p></li>
 <li><p>For your written section, type up your essay and short answers response and save them <strong>in one document</strong> as .pdf. Name the file: <strong>StudentNumber_WrittenRespones.pdf</strong></p></li>
 <li><p>If your student number were “10011001”, your file would be named: <strong>10011001_WrittenRespones.pdf</strong></p></li>
-<li><p>For your flowchart, create a flowchart, either using the <a href="https://app.diagrams.net/">diagrams.net</a> tool discussed in class, another software of your choosing, or draw one out by hand. Save the file as either a .pdf, png, or jpg. Name the file: <strong>StudentNumber_Flowchart.pdf</strong></p></li>
-<li><p>If your student number were “10011001”, your file would be named: <strong>10011001_FlowChart.pdf</strong>, <strong>10011001_FlowChart.png</strong>, or <strong>10011001_FlowChart.jpg</strong>, depending on the file type you chose.</p></li>
-<li><p>For the automated response section, download the answer sheet for your exam. The file name is already formatted for you so do not change it but <strong>make sure</strong> the the student number matches.</p></li>
 </ul>
-<p>The exam is �open book�, you can reference any resources from the class or online to work through the questions. However, all the work MUST be in your own words. You can not copy from online resources or classmates. Plagiarism will be taken very seriously and could result in failing the exam.</p>
+</section>
+<section id="flowchart" class="level3">
+<h3 class="anchored" data-anchor-id="flowchart">Flowchart</h3>
+<ul>
+<li>Create a flowchart outlining a geographic analysis you can use the <a href="https://app.diagrams.net/">diagrams.net</a> tool discussed in class, another software of your choosing, or draw one out by hand.</li>
+<li>Save the file as either a .pdf, png, or jpg. Name the file: <strong>StudentNumber_Flowchart.pdf</strong>
+<ul>
+<li>If your student number were “10011001”, your file would be named: <strong>10011001_FlowChart.pdf</strong>, <strong>10011001_FlowChart.png</strong>, or <strong>10011001_FlowChart.jpg</strong>, depending on the file type you chose.</li>
+</ul></li>
+<li>Make sure to upload the flowchart as a separate file. Do not include it in your written answers or it will not be marked.</li>
+</ul>
+</section>
+<section id="mixed-questions-types" class="level3">
+<h3 class="anchored" data-anchor-id="mixed-questions-types">Mixed Questions Types</h3>
+<ul>
+<li><p>Includes Matching, Fill in the blank, multiple choice, etc.</p></li>
+<li><p>For these questions, download the answer sheet for your exam, which can be found <a href="https://github.com/GEOS270/FinalExam/raw/main/sheets/63027346.zip">here</a>.</p></li>
+<li><p>Make sure the file is <strong>StudentNumber_AnswerSheet.csv</strong> format before you upload. Do not save/upload it as a .numbers, .xls, or any other type of file. It must be in .csv format to get marked.</p></li>
+</ul>
 <p>Good Luck!</p>
-<div style="page-break-after: always;"></div>
-<section id="essay" class="level1">
-<h1>Essay</h1>
+</section>
+</section>
+<section id="written-responses-1" class="level1">
+<h1>Written Responses</h1>
+<section id="essay" class="level2">
+<h2 class="anchored" data-anchor-id="essay">Essay</h2>
 <p>Pick <strong>one</strong> of the essays below to answer. Make sure to list the number of the essay you are choosing to answer. Feel free to include diagrams/figures/sketches if applicable, but do not feel obligated to do so.</p>
-<p><strong>1.0</strong></p>
-<section id="coordinate-systems" class="level2">
-<h2 class="anchored" data-anchor-id="coordinate-systems">Coordinate Systems</h2>
-<p>In Module 2, you created a map that looked something like this:</p>
+<section id="coordinate-systems" class="level3">
+<h3 class="anchored" data-anchor-id="coordinate-systems">Coordinate Systems</h3>
+<p>In Module 2, you created a map that looked something like the image below. Discuss the steps necessary to create a 2D representation of the earth (or a specific region of the earth) in a GIS and what are the simplifications made at each step? Discuss the considerations (e.g., scale) that must be taken into account when choosing an appropriate map projection? What are the differences between coordinate systems show in this map and when should (or shouldn’t) we use them?</p>
 <p><img src="images/Coordinate_System_Comparison.png" class="img-fluid" style="width:80.0%"></p>
-<p>Discuss the steps necessary to create a 2D representation of the earth (or a specific region of the earth) in a GIS and what are the simplifications made at each step? Discuss the considerations (e.g., scale) that must be taken into account when choosing an appropriate map projection? What are the differences between coordinate systems show in this map and when should (or shouldn’t) we use them?</p>
-<p><strong>2.0</strong></p>
 </section>
-<section id="data-models" class="level2">
-<h2 class="anchored" data-anchor-id="data-models">Data Models</h2>
-<p>In Module 4, you assessed the relationship between housing cost and vegetation cover and created a map that looked something like this:</p>
+<section id="data-models" class="level3">
+<h3 class="anchored" data-anchor-id="data-models">Data Models</h3>
+<p>In Module 4, you assessed the relationship between housing cost and vegetation cover and created a map that looked something like the image below. Discuss the key differences between raster and vector data; what type(s) of phenomena they are best suited to represent, and what does the term ‘resolution’ describe in the context of these data models, and how is resolution related to, and different from, the concept of scale? How did you make use of both raster and vector data to investigate the relationship between housing cost and vegetation cover in Vancouver?</p>
 <p><img src="images/Van_NDVI_Map.png" class="img-fluid" style="width:80.0%"></p>
-<p>Discuss the key differences between raster and vector data; what type(s) of phenomena they are best suited to represent, and what does the term ‘resolution’ describe in the context of these data models, and how is resolution related to, and different from, the concept of scale? How did you make use of both raster and vector data to investigate the relationship between housing cost and vegetation cover in Vancouver?</p>
-<div style="page-break-after: always;"></div>
 </section>
 </section>
-<section id="shortanswer" class="level1">
-<h1>ShortAnswer</h1>
+<section id="short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="short-answer">Short Answer</h2>
 <p>You can answer these questions briefly in sentence or bullet point format.</p>
-<p><strong>3.0</strong></p>
-<section id="raster-tools" class="level2">
-<h2 class="anchored" data-anchor-id="raster-tools">Raster Tools</h2>
+<section id="raster-tools" class="level3">
+<h3 class="anchored" data-anchor-id="raster-tools">Raster Tools</h3>
 <p>Compare and contrast the raster calculator and weighted overlay tools. Which of these tools (raster calculator or weighted overlay) did we use to identify the suitability Tsunami shelters in Port Alberni? Could we have used the other tool (raster calculator or weighted overlay) instead?</p>
-<p><strong>4.0</strong></p>
 </section>
-<section id="select-by-attribute" class="level2">
-<h2 class="anchored" data-anchor-id="select-by-attribute">Select by Attribute</h2>
-<p>How would you use the select by attribute tool in ArcGIS Pro to select all the birch and pine trees over 35 yr old from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>A</th>
-<th style="text-align: right;">B</th>
-<th style="text-align: right;">C</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Birch</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">50</td>
-</tr>
-<tr class="even">
-<td>Birch</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">75</td>
-</tr>
-<tr class="odd">
-<td>Pine</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">35</td>
-</tr>
-<tr class="even">
-<td>Pine</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">45</td>
-</tr>
-<tr class="odd">
-<td>Oak</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">30</td>
-</tr>
-<tr class="even">
-<td>Maple</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">60</td>
-</tr>
-</tbody>
-</table>
-<div style="page-break-after: always;"></div>
+<section id="spatial-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-similarity">Spatial Similarity</h3>
+<p>In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space. What were the terms used to similarity or dissimilarity across space? Which one would best describe a corn field and which would better describe a tundra ecosystem and why?</p>
 </section>
+<section id="autocorrelation" class="level3">
+<h3 class="anchored" data-anchor-id="autocorrelation">Autocorrelation</h3>
+<p>What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?</p>
 </section>
-<section id="shortanswer-numeric" class="level1">
-<h1>ShortAnswer Numeric</h1>
-<p>Give the correct answer and corresponding units, you can show your work for partial credit.</p>
-<p><strong>5.0</strong> ## Area of a Raster</p>
+<section id="select-by-attribute" class="level3">
+<h3 class="anchored" data-anchor-id="select-by-attribute">Select by Attribute</h3>
+The table below contains a list records for different trees in an area. The select by attribute tool can be used to query records in a table. For example, if I needed to find all the maple trees , I could select:
+<p>
+<strong>Where:</strong> Species = Maple
+</p>
+</section>
+<section id="file-size-vs.-resolution" class="level3">
+<h3 class="anchored" data-anchor-id="file-size-vs.-resolution">File Size vs.&nbsp;Resolution</h3>
 <p>You have two raster images that cover the exact same area (same extent). Raster image ‘A’ is a DEM (one band) and a cell size of 100 m. Raster image ‘B’ is an RGB color image (three bands) and a cell size of 25 m. If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?“,</p>
-<div style="page-break-after: always;"></div>
+<p>You have two raster images that cover the exact same area (same extent). Raster image ‘A’ is a DEM (one band) and a cell size of 100 m. Raster image ‘B’ is an RGB color image (three bands) and a cell size of 50 m. If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?“,</p>
 </section>
-<section id="flow-chart" class="level1">
-<h1>Flow Chart</h1>
+</section>
+</section>
+<section id="flowchart-1" class="level1">
+<h1>Flowchart</h1>
 <p>Create a flow chart to represent the analysis steps you would need to conduct to answer the following question. Either draw your flowchart by hand, use this <a href="https://app.diagrams.net/">online tool</a> or use a software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.</p>
-<p><strong>6.0</strong></p>
-<section id="locations-for-a-cherry-orchard" class="level2">
-<h2 class="anchored" data-anchor-id="locations-for-a-cherry-orchard">Locations for a Cherry Orchard</h2>
+<section id="locations-for-a-cherry-orchard" class="level3">
+<h3 class="anchored" data-anchor-id="locations-for-a-cherry-orchard">Locations for a Cherry Orchard</h3>
 <p>You have been hired as a GIS consultant to identify the best locations in BC to start a new organic cherry orchard. The ideal location must meet the following criteria:</p>
 <ul>
 <li>Be on land already used for agriculture.</li>
@@ -304,59 +302,61 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always;"></div>
 </section>
 </section>
-<section id="matching" class="level1">
-<h1>Matching</h1>
+<section id="mixed-questions-types-1" class="level1">
+<h1>Mixed Questions Types</h1>
+<p>For these questions, <strong>make sure</strong> to use the answer sheet, which can be found which can be found <a href="https://github.com/GEOS270/FinalExam/raw/main/sheets/0.zip">here</a>.</p>
+<ul>
+<li>Make sure you follow the <a href="#Instructions">instructions</a> correctly when saving and uploading your answer sheet</li>
+</ul>
+<section id="matching" class="level2">
+<h2 class="anchored" data-anchor-id="matching">Matching</h2>
 <p>Match the numbered items to the values from the answer bank. Some answers may be used more than once. Only type the letter corresponding to you choice on your answer sheet. <strong>Do not</strong> type out the full word, only type the letter corresponding to the answer. Answers are not case sensitive.</p>
-<p><strong>7</strong><br>
+<p><strong>1</strong><br>
 Match the following data to their corresponding measurement scale:</p>
 <p>Answer Bank: <strong>a</strong> Ratio <strong>b</strong> Nominal <strong>c</strong> Ordinal <strong>d</strong> Interval</p>
 <ul>
-<li><p><strong>7.0</strong><br>
+<li><p><strong>1.0</strong><br>
 Monthly Income</p></li>
-<li><p><strong>7.1</strong><br>
+<li><p><strong>1.1</strong><br>
 Tree Species</p></li>
-<li><p><strong>7.2</strong><br>
+<li><p><strong>1.2</strong><br>
 Age</p></li>
-<li><p><strong>7.3</strong><br>
+<li><p><strong>1.3</strong><br>
 Dog Size (Small/Medium/Large)</p></li>
-<li><p><strong>7.4</strong><br>
+<li><p><strong>1.4</strong><br>
 Temperature (Kelvin)</p></li>
-<li><p><strong>7.5</strong><br>
+<li><p><strong>1.5</strong><br>
 IQ Score</p></li>
-<li><p><strong>7.6</strong><br>
+<li><p><strong>1.6</strong><br>
 IQ Score</p></li>
-<li><p><strong>7.7</strong><br>
+<li><p><strong>1.7</strong><br>
 Temperature (Fahrenheit)</p></li>
 </ul>
-<div style="page-break-after: always;"></div>
 </section>
-<section id="fill-in-the-blanks" class="level1">
-<h1>Fill in the Blanks</h1>
+<section id="fill-in-the-blanks" class="level2">
+<h2 class="anchored" data-anchor-id="fill-in-the-blanks">Fill in the Blanks</h2>
 <p>Enter the words or phrases that best complete the statement. Blanks are labelled with with an numeric code in brackets (e.g., [11.1]) which has a corresponding slot in your answer sheet. Spelling does not need to be exact, but <strong>make sure</strong> to type out acronyms/abbreviations. For example, if the answer is <em>Geographic Information Science</em> but you entered <strong>GIS</strong>, your answer will be marked as incorrect.</p>
+<p><strong>2</strong><br>
+Metadata is [ <sub>2.0</sub> ] about [ <sub>2.1</sub> ].</p>
+<p><strong>3</strong><br>
+[ <sub>3.0</sub> ] is the process of assigning spatial [ <sub>3.1</sub> ] to images like scanned historical maps.</p>
+<p><strong>4</strong><br>
+The [ <sub>4.0</sub> ] arises when we aggregate individual data values into larger [ <sub>4.1</sub> ] with arbitrary boundaries.</p>
+<p><strong>5</strong><br>
+An attribute [ <sub>5.0</sub> ] contains non-spatial data, that is linked to spatial data using an [ <sub>5.1</sub> ].</p>
+<p><strong>6</strong><br>
+Spatial [ <sub>6.0</sub> ] is the process of estimating the values between point observations to create a continuous surface. A common method known as [ <sub>6.1</sub> ] uses a function to estimate cell values based on their proximity to a set of known point observations.</p>
+<p><strong>7</strong><br>
+Random sampling is a/an [ <sub>7.0</sub> ] method for collecting spatial information. Stratified random sampling and cluster sampling are [ <sub>7.1</sub> ] methods for collecting spatial information that are designed to help address some of the downsides of random sampling.</p>
 <p><strong>8</strong><br>
-Metadata is [ <sub>8.0</sub> ] about [ <sub>8.1</sub> ].</p>
-<p><strong>9</strong><br>
-[ <sub>9.0</sub> ] is the process of assigning spatial [ <sub>9.1</sub> ] to images like scanned historical maps.</p>
-<p><strong>10</strong><br>
-The [ <sub>10.0</sub> ] arises when we aggregate individual data values into larger [ <sub>10.1</sub> ] with arbitrary boundaries.</p>
-<p><strong>11</strong><br>
-An attribute [ <sub>11.0</sub> ] contains non-spatial data, that is linked to spatial data using an [ <sub>11.1</sub> ].</p>
-<p><strong>12</strong><br>
-Spatial [ <sub>12.0</sub> ] is the process of estimating the values between point observations to create a continuous surface. A common method known as [ <sub>12.1</sub> ] uses a function to estimate cell values based on their proximity to a set of known point observations.</p>
-<p><strong>13</strong><br>
-Random sampling is a/an [ <sub>13.0</sub> ] method for collecting spatial information. Stratified random sampling and cluster sampling are [ <sub>13.1</sub> ] methods for collecting spatial information that are designed to help address some of the downsides of random sampling.</p>
-<p><strong>14</strong><br>
-Resolution is a branch of your [ <sub>14.0</sub> ], scale is a property of your [ <sub>14.1</sub> ].</p>
-<div style="page-break-after: always;"></div>
+Resolution is a branch of your [ <sub>8.0</sub> ], scale is a property of your [ <sub>8.1</sub> ].</p>
 </section>
-<section id="multiple-choice" class="level1">
-<h1>Multiple Choice</h1>
+<section id="multiple-choice" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice">Multiple Choice</h2>
 <p>Type the letter corresponding to you choice on your answer sheet. <strong>Do not</strong> type out the full word, only type the letter corresponding to the answer. Answers are not case sensitive.</p>
-<p><strong>15.0</strong><br>
-This type of analysis lets us look at the relationship one variable has with another.</p>
+<p><strong>9.0</strong> This type of analysis lets us look at the relationship one variable has with another.</p>
 <ul>
 <li><strong>a</strong> Linear Regression</li>
 <li><strong>b</strong> Random Forest</li>
@@ -364,7 +364,7 @@ This type of analysis lets us look at the relationship one variable has with ano
 <li><strong>d</strong> Line Plotting</li>
 <li><strong>e</strong> Natural Breaks Classification</li>
 </ul>
-<p><strong>16.0</strong><br>
+<p><strong>10.0</strong><br>
 These chart/plots are best suited for showing the frequency distribution of a discrete variable</p>
 <ul>
 <li><strong>a</strong> Histograms</li>
@@ -373,7 +373,7 @@ These chart/plots are best suited for showing the frequency distribution of a di
 <li><strong>d</strong> Line Charts</li>
 <li><strong>e</strong> Bar Charts</li>
 </ul>
-<p><strong>17.0</strong><br>
+<p><strong>11.0</strong><br>
 This issue arises when we assume we can take data presented in aggregate and aggregate it again at a higher level.</p>
 <ul>
 <li><strong>a</strong> Modifiable Aerial Unit Problem</li>
@@ -382,7 +382,7 @@ This issue arises when we assume we can take data presented in aggregate and agg
 <li><strong>d</strong> Aggregation Error</li>
 <li><strong>e</strong> Atomistic Fallacy</li>
 </ul>
-<p><strong>18.0</strong><br>
+<p><strong>12.0</strong><br>
 When making a map of global population density, you should use this type of projection to ensure accurate calculations:</p>
 <ul>
 <li><strong>a</strong> Equal Area</li>
@@ -391,7 +391,7 @@ When making a map of global population density, you should use this type of proj
 <li><strong>d</strong> Universal Transverse Mercator</li>
 <li><strong>e</strong> Conformal Conic</li>
 </ul>
-<p><strong>19.0</strong><br>
+<p><strong>13.0</strong><br>
 Dr.&nbsp;John Snow’s analysis of the 1854 cholera outbreak in London was a foundational study in the field of:</p>
 <ul>
 <li><strong>a</strong> GIS</li>
@@ -400,7 +400,7 @@ Dr.&nbsp;John Snow’s analysis of the 1854 cholera outbreak in London was a fou
 <li><strong>d</strong> Ecology</li>
 <li><strong>e</strong> Epistemology</li>
 </ul>
-<p><strong>20.0</strong><br>
+<p><strong>14.0</strong><br>
 Map Rock is a 12,000-year stone engraving that that shows a map of which river?</p>
 <ul>
 <li><strong>a</strong> Dyje River</li>
@@ -409,7 +409,7 @@ Map Rock is a 12,000-year stone engraving that that shows a map of which river?<
 <li><strong>d</strong> Nile River</li>
 <li><strong>e</strong> Murray Darling River</li>
 </ul>
-<p><strong>21.0</strong><br>
+<p><strong>15.0</strong><br>
 These chart/plots are best suited for showing the distribution of a continuous variable:</p>
 <ul>
 <li><strong>a</strong> Line Charts</li>
@@ -418,36 +418,35 @@ These chart/plots are best suited for showing the distribution of a continuous v
 <li><strong>d</strong> Histograms</li>
 <li><strong>e</strong> Box Plots</li>
 </ul>
-<div style="page-break-after: always;"></div>
 </section>
-<section id="true-false" class="level1">
-<h1>True False</h1>
+<section id="true-false" class="level2">
+<h2 class="anchored" data-anchor-id="true-false">True False</h2>
 <p>Type the letter corresponding to you choice on your answer sheet. <strong>Do not</strong> type out the full word, only type the letter corresponding to the answer. Answers are not case sensitive.</p>
-<p><strong>22.0</strong><br>
+<p><strong>16.0</strong><br>
 Box plots are well suited for looking at the spread of values within different classes.</p>
 <ul>
 <li><strong>a</strong> True</li>
 <li><strong>b</strong> False</li>
 </ul>
-<p><strong>23.0</strong><br>
+<p><strong>17.0</strong><br>
 K-means is a type of unsupervised classification method.</p>
 <ul>
 <li><strong>a</strong> True</li>
 <li><strong>b</strong> False</li>
 </ul>
-<p><strong>24.0</strong><br>
+<p><strong>18.0</strong><br>
 Neural Networks are a type of unsupervised classification method.</p>
 <ul>
 <li><strong>a</strong> False</li>
 <li><strong>b</strong> True</li>
 </ul>
-<p><strong>25.0</strong><br>
+<p><strong>19.0</strong><br>
 Cartography originated in Europe.</p>
 <ul>
 <li><strong>a</strong> False</li>
 <li><strong>b</strong> True</li>
 </ul>
-<p><strong>26.0</strong><br>
+<p><strong>20.0</strong><br>
 The first computer based geographic information system was invented in the United States.</p>
 <ul>
 <li><strong>a</strong> True</li>
@@ -455,6 +454,7 @@ The first computer based geographic information system was invented in the Unite
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

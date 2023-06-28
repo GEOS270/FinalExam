@@ -1,5 +1,5 @@
 ---
-title: "2022 W2"
+title: "2023 S1"
 ---
 
 ```{=html}
@@ -54,9 +54,10 @@ title: "2022 W2"
 <body>
 <!-- <nav id="layer_menu"></nav>
 <div id="map"></div> -->
+<div><p>Every student has been assigned a unique, randomly generated exam.  Follow the link below to access your exam by inputing you student number.</p></div>
 <div class="action_menu"> 
-    <button id="getSheet" class="btn">Click here to download you answer sheet</button>
-    <button id="setNumber" class="btn">Click here to access your exam</button>
+    <!-- <button id="getSheet" class="btn">Click here to download you answer sheet</button> -->
+    <button id="setNumber" class="btn">Click to Access Your Exam</button>
 </div>
 
 <pre id="json"></pre>
@@ -85,10 +86,10 @@ function setStudentNumber() {
     };
 };
 
-document.getElementById('getSheet').addEventListener('click', () => {
-        setStudentNumber();
-        download('https://raw.githubusercontent.com/GEOS270/FinalExam/main/sheets/'+studentNo+'.zip');
-    });
+// document.getElementById('getSheet').addEventListener('click', () => {
+//         setStudentNumber();
+//         download('https://github.com/GEOS270/FinalExam/raw/main/sheets/'+studentNo+'.zip');
+//     });
 
 document.getElementById('setNumber').addEventListener('click', () => {
         setStudentNumber();

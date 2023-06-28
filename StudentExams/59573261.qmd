@@ -16,26 +16,26 @@ This is the final exam for student number: **59573261**.  Confirm your student n
 The exam is "open book", you can reference any resources from the class or online to work through the questions. However, all the work MUST be in your own words. You can not copy from online resources or classmates. Plagiarism will be taken very seriously and could result in failing the exam.
 
 
-The exam has three parts.  You will upload each part as a separate document to the exam's canvas page. 
+The exam has **three parts**.  You will upload each part as a separate document to the exam's canvas page. 
 
-(@) Written responses
+### Written Responses
 
 * Consists of an essay and a handful of short answer questions
 
 * For your written section, type up your essay and short answers response and save them **in one document** as .pdf.  Name the file: **StudentNumber_WrittenRespones.pdf**
 * If your student number were "10011001", your file would be named: **10011001_WrittenRespones.pdf**
 
-(@) A flowchart diagram
+### Flowchart
 
 * Create a flowchart outlining a geographic analysis you can use the [diagrams.net](https://app.diagrams.net/) tool discussed in class, another software of your choosing, or draw one out by hand. 
 * Save the file as either a .pdf, png, or jpg. Name the file: **StudentNumber_Flowchart.pdf**
   * If your student number were "10011001", your file would be named: **10011001_FlowChart.pdf**, **10011001_FlowChart.png**, or **10011001_FlowChart.jpg**, depending on the file type you chose.
 * Make sure to upload the flowchart as a separate file.  Do not include it in your written answers or it will not be marked.
 
-(@) Miscellaneous questions
+### Mixed Questions Types
 
 * Includes Matching, Fill in the blank, multiple choice, etc.
-* For these questions, download the answer sheet for your exam, which can be found [here](https://raw.githubusercontent.com/GEOS270/FinalExam/main/sheets/59573261.zip).  
+* For these questions, download the answer sheet for your exam, which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/59573261.zip).  
 
 * Make sure the file is **StudentNumber_AnswerSheet.csv** format before you upload.  Do not save/upload it as a .numbers, .xls, or any other type of file.  It must be in .csv format to get marked.
 
@@ -178,12 +178,12 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-# Miscellaneous Questions
+# Mixed Questions Types
 
 
-For these questions, **make sure** to use the answer sheet, which can be found which can be found [here](https://raw.githubusercontent.com/GEOS270/FinalExam/main/sheets/0.zip).  
+For these questions, **make sure** to use the answer sheet, which can be found which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/0.zip).
 
-
+* Make sure you follow the [instructions](#Instructions) correctly when saving and uploading your answer sheet
 
 
 
