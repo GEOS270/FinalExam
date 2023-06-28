@@ -79,13 +79,18 @@ What is the purpose of data normalization and how do you do it? List two example
 
 
 
+### Raster Tools
+
+Compare and contrast the raster calculator and weighted overlay tools.  Which of these tools (raster calculator or weighted overlay) did we use to identify the suitability Tsunami shelters in Port Alberni?  Could we have used the other tool (raster calculator or weighted overlay) instead?
 
 
 
 
-### Spatial Similarity
 
-In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
+
+### Autocorrelation
+
+What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?
 
 
 

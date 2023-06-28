@@ -78,19 +78,18 @@ Compare and contrast the clip and intersect tools.  Which of these tools (clip o
 
 
 
-### Spatial Similarity
+### Spatial Patterns
 
-In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
-
-
+In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to describe similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
 
 
 
 
-### Normalization
 
 
-What is the purpose of data normalization and how do you do it? List two examples from lab where we normalized data and why we needed to do it?
+### Raster Tools
+
+Compare and contrast the raster calculator and weighted overlay tools.  Which of these tools (raster calculator or weighted overlay) did we use to identify the suitability Tsunami shelters in Port Alberni?  Could we have used the other tool (raster calculator or weighted overlay) instead?
 
 
 

@@ -87,6 +87,12 @@ What is the purpose of data normalization and how do you do it? List two example
 
 
 
+### Autocorrelation
+
+What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?
+
+
+
 
 
 

@@ -77,18 +77,18 @@ Compare and contrast the clip and intersect tools.  Which of these tools (clip o
 
 
 
-### Raster Tools
-
-Compare and contrast the raster calculator and weighted overlay tools.  Which of these tools (raster calculator or weighted overlay) did we use to identify the suitability Tsunami shelters in Port Alberni?  Could we have used the other tool (raster calculator or weighted overlay) instead?
-
-
-
-
-
-
 ### Autocorrelation
 
 What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?
+
+
+
+
+
+
+### Raster Tools
+
+Compare and contrast the raster calculator and weighted overlay tools.  Which of these tools (raster calculator or weighted overlay) did we use to identify the suitability Tsunami shelters in Port Alberni?  Could we have used the other tool (raster calculator or weighted overlay) instead?
 
 
 

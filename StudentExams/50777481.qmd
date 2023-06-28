@@ -86,9 +86,10 @@ Compare and contrast the clip and intersect tools.  Which of these tools (clip o
 
 
 
-### Autocorrelation
+### Normalization
 
-What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?
+
+What is the purpose of data normalization and how do you do it? List two examples from lab where we normalized data and why we needed to do it?
 
 
 

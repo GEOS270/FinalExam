@@ -87,6 +87,13 @@ Compare and contrast the raster calculator and weighted overlay tools.  Which of
 
 
 
+### Spatial Patterns
+
+In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to describe similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
+
+
+
+
 
 
 ### Select by Attribute

@@ -69,9 +69,6 @@ You can answer these questions briefly in sentence or bullet point format.
 
 
 
-
-
-
 ### Normalization
 
 
@@ -83,9 +80,18 @@ What is the purpose of data normalization and how do you do it? List two example
 
 
 
-### Spatial Similarity
+### Spatial Patterns
 
-In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
+In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to describe similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
+
+
+
+
+
+
+### Autocorrelation
+
+What is spatial auto-correlation and what are two analysis tools we covered that use spatial auto-correlation create a continuous field from discrete point observations?
 
 
 
