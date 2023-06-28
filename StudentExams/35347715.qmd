@@ -15,35 +15,20 @@ This is the final exam for student number: **35347715**.  Confirm your student n
 
 The exam is "open book", you can reference any resources from the class or online to work through the questions. However, all the work MUST be in your own words. You can not copy from online resources or classmates. Plagiarism will be taken very seriously and could result in failing the exam.
 
+The exam will be open for 24 hours, but it shouldn't take you more than a few hours to complete.  You only have one attempt to take the exam during the exam.  The exam has **three parts**: a written response section, a flowchart section, and a mixed questions.  You will save each part as a separate document and upload it to exam page on canvas.
 
-The exam has **three parts**.  You will upload each part as a separate document to the exam's canvas page. 
-
-### Written Responses
-
-* Consists of an essay and a handful of short answer questions
-
-* For your written section, type up your essay and short answers response and save them **in one document** as .pdf.  Name the file: **StudentNumber_WrittenRespones.pdf**
-* If your student number were "10011001", your file would be named: **10011001_WrittenRespones.pdf**
-
-### Flowchart
-
-* Create a flowchart outlining a geographic analysis you can use the [diagrams.net](https://app.diagrams.net/) tool discussed in class, another software of your choosing, or draw one out by hand. 
-* Save the file as either a .pdf, png, or jpg. Name the file: **StudentNumber_Flowchart.pdf**
-  * If your student number were "10011001", your file would be named: **10011001_FlowChart.pdf**, **10011001_FlowChart.png**, or **10011001_FlowChart.jpg**, depending on the file type you chose.
-* Make sure to upload the flowchart as a separate file.  Do not include it in your written answers or it will not be marked.
-
-### Mixed Questions Types
-
-* Includes Matching, Fill in the blank, multiple choice, etc.
-* For these questions, download the answer sheet for your exam, which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/35347715.zip).  
-
-* Make sure the file is **StudentNumber_AnswerSheet.csv** format before you upload.  Do not save/upload it as a .numbers, .xls, or any other type of file.  It must be in .csv format to get marked.
-
+If you experience extenuating circumstances during the exam you may reach out to me, but I will not be answering any questions related to the content of the exam during the exam period. Do not contact your TAs about the exam, they will not be answering any questions during the exam period.
 
 Good Luck!
 
 
 # Written Responses
+
+This section consists of an essay and a handful of short answer questions.
+
+* For your written section, type up your essay and short answers response and save them **in one document** as .pdf.  Name the file: **StudentNumber_WrittenRespones.pdf**
+    * If your student number were "10011001", your file would be named: **10011001_WrittenRespones.pdf**
+
 
 ## Essay
 
@@ -130,7 +115,11 @@ You have two raster images that cover the exact same area (same extent).  Raster
 
 # Flowchart 
 
-Create a flow chart to represent the analysis steps you would need to conduct to answer the following question. Either draw your flowchart by hand, use this [online tool](https://app.diagrams.net/) or use a software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.
+Create a flow chart to represent the analysis steps you would need to conduct to answer the following question. Either draw your flowchart by hand, use this [online tool](https://app.diagrams.net/), or use another software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.
+
+* Save the file as either a .pdf, png, or jpg and name it as follows: **StudentNumber_Flowchart.pdf**
+  * If your student number were "10011001", your file would be named: **10011001_FlowChart.pdf**, **10011001_FlowChart.png**, or **10011001_FlowChart.jpg**, depending on the file type you chose.
+* Make sure to upload the flowchart as a separate file.  Do not include it in your written answers or it **will not be marked**.
 
 
 
@@ -162,12 +151,22 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 
 
-# Mixed Questions Types
+# Mixed Questions
 
+For these questions, download the answer sheet for your exam, which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/0_AnswerSheet.zip).  
 
-For these questions, **make sure** to use the answer sheet, which can be found which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/0.zip).
+* It is **very important** make sure the file is named and formatted properly **before** you upload it.  
+    * It should be formatted as follows: **StudentNumber_AnswerSheet.csv** .  
+    * If your student number were "10011001", your file would be named: **10011001_AnswerSheet.csv**
+  
+* **Do not** upload the answer sheet as a .numbers, .xls, or any other type of file.   Only upload a .csv file for your answer sheet.
+    * Canvas will convert .numbers, .xls, etc to a .pdf and which cannot be graded automatically.  
+    * Answer sheets that cannot be graded automatically will incur a significant penalty.
 
-* Make sure you follow the [instructions](#Instructions) correctly when saving and uploading your answer sheet
+* The answer sheet file is already named and formatted properly for you, but if you accidentally save in a different format need help exporting a .csv file, you can refer to the following instructions:
+    * For the [Numbers](https://support.apple.com/en-ca/guide/numbers/tan3b922d4ad/mac) application on a Mac 
+    * For [Excel](https://support.microsoft.com/en-au/office/save-a-workbook-to-text-format-txt-or-csv-3e9a9d6c-70da-4255-aa28-fcacf1f081e6) on Windows.
+
 
 
 
