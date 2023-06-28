@@ -1,0 +1,106 @@
+---
+title: "2022 W2"
+---
+
+```{=html}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+	body { margin: 0; padding: 0;}
+	/* #map { position: absolute; top: 0; bottom: 0; width: 100%;}
+	#map canvas {cursor: crosshair;} */
+  
+    .action_menu {
+        text-align: center;
+        background: #fff;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        border: #3887be;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        max-height: 50%;
+        max-width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        font-family: 'Open Sans', sans-serif; 
+        }
+
+    .btn {
+        font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #3386c0;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        border-width: 1px;
+        cursor: pointer;
+        min-width: 50%;
+        padding: 25px;
+        border-color: black;
+    }
+    .btn:hover {
+        background-color: #4ea0da;
+    }
+    .btn:first-child{
+        margin-left: 0;
+    }    
+</style>
+</head>
+
+<body>
+<!-- <nav id="layer_menu"></nav>
+<div id="map"></div> -->
+<div class="action_menu"> 
+    <button id="getSheet" class="btn">Click here to download you answer sheet</button>
+    <button id="setNumber" class="btn">Click here to access your exam</button>
+</div>
+
+<pre id="json"></pre>
+<script>
+    
+var studentNo = 0;
+
+function download(url) {
+  const a = document.createElement('a')
+  a.href = url
+  a.download = url.split('/').pop()
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+}
+    
+function setStudentNumber() {
+  let set = prompt("Enter your student number: ", )
+    if (set != null) {
+    studentNo = parseInt(set, 10);
+    if (isNaN(studentNo)) { studentNo = 1; }
+    else if (studentNo<1) { studentNo = 1; };
+    }
+    else{
+    studentNo =1; 
+    };
+};
+
+document.getElementById('getSheet').addEventListener('click', () => {
+        setStudentNumber();
+        download('https://raw.githubusercontent.com/GEOS270/FinalExam/main/sheets/'+studentNo+'.zip');
+    });
+
+document.getElementById('setNumber').addEventListener('click', () => {
+        setStudentNumber();
+        // window.open('https://raw.githubusercontent.com/GEOS270/FinalExam/main/docs/raw/'+studentNo+'.pdf');
+        
+        window.open('StudentExams/'+studentNo+'.html');
+        // window.open('https://geos270.github.io/FinalExam/raw/'+studentNo+'.pdf');
+    });
+
+</script>
+ 
+</body>
+</html>
+
+```

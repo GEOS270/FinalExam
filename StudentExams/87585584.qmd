@@ -1,0 +1,380 @@
+---
+title: "GEOS 270 Final Exam"
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+---
+
+
+This is the final exam for student number: **87585584**.  Confirm your student number is correct before proceeding.  **Do not complete someone else's exam.** 
+
+
+# Instructions
+
+The exam is "open book", you can reference any resources from the class or online to work through the questions. However, all the work MUST be in your own words. You can not copy from online resources or classmates. Plagiarism will be taken very seriously and could result in failing the exam.
+
+
+The exam has three parts.  You will upload each part as a separate document to the exam's canvas page. 
+
+(@) Written responses
+
+* Consists of an essay and a handful of short answer questions
+
+* For your written section, type up your essay and short answers response and save them **in one document** as .pdf.  Name the file: **StudentNumber_WrittenRespones.pdf**
+* If your student number were "10011001", your file would be named: **10011001_WrittenRespones.pdf**
+
+(@) A flowchart diagram
+
+* Create a flowchart outlining a geographic analysis you can use the [diagrams.net](https://app.diagrams.net/) tool discussed in class, another software of your choosing, or draw one out by hand. 
+* Save the file as either a .pdf, png, or jpg. Name the file: **StudentNumber_Flowchart.pdf**
+  * If your student number were "10011001", your file would be named: **10011001_FlowChart.pdf**, **10011001_FlowChart.png**, or **10011001_FlowChart.jpg**, depending on the file type you chose.
+* Make sure to upload the flowchart as a separate file.  Do not include it in your written answers or it will not be marked.
+
+(@) Miscellaneous questions
+
+* Includes Matching, Fill in the blank, multiple choice, etc.
+* For these questions, download the answer sheet for your exam, which can be found [here](https://raw.githubusercontent.com/GEOS270/FinalExam/main/sheets/87585584.zip).  
+
+* Make sure the file is **StudentNumber_AnswerSheet.csv** format before you upload.  Do not save/upload it as a .numbers, .xls, or any other type of file.  It must be in .csv format to get marked.
+
+
+Good Luck!
+
+
+# Written Responses
+
+## Essay
+
+Pick **one** of the essays below to answer.  Make sure to list the number of the essay you are choosing to answer.  Feel free to include diagrams/figures/sketches if applicable, but do not feel obligated to do so.
+
+
+
+### Coordinate Systems
+
+In Module 2, you created a map that looked something like the image below. Discuss the steps necessary to create a 2D representation of the earth (or a specific region of the earth) in a GIS and what are the simplifications made at each step?  Discuss the considerations (e.g., scale) that must be taken into account when choosing an appropriate map projection?  What are the differences between coordinate systems show in this map and when should (or shouldn't) we use them?
+
+![](images/Coordinate_System_Comparison.png){width=80%}
+
+
+
+
+
+
+
+
+### Data Models
+
+In Module 4, you assessed the relationship between housing cost and vegetation cover and created a map that looked something like the image below.  Discuss the key differences between raster and vector data; what type(s) of phenomena they are best suited to represent, and what does the term 'resolution' describe in the context of these data models, and how is resolution related to, and different from, the concept of scale?  How did you make use of both raster and vector data to investigate the relationship between housing cost and vegetation cover in Vancouver?
+
+![](images/Van_NDVI_Map.png){width=80%}
+
+
+
+
+
+
+
+
+## Short Answer
+
+You can answer these questions briefly in sentence or bullet point format.
+
+
+
+
+
+### Spatial Similarity
+
+In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space.  What were the terms used to similarity or dissimilarity across space?  Which one would best describe a corn field and which would better describe a tundra ecosystem and why?
+
+
+
+
+
+
+### Vector Tools
+
+Compare and contrast the clip and intersect tools.  Which of these tools (clip or intersect) did we use to identify the population at risk from a Tsunami in Port Alberni?  Could we have used the other tool (clip or intersect) instead?
+
+
+
+
+
+### Normalization
+
+
+What is the purpose of data normalization and how do you do it? List two examples from lab where we normalized data and why we needed to do it?
+
+
+
+
+
+
+### Select by Attribute
+
+The table below contains a list records for different trees in an area.  The select by attribute tool can be used to query records in a table. For example, if I needed to find all the maple trees , I could select:\n\n<p><strong>Where:</strong> Species = Maple</p>
+
+
+
+
+How would you use the select by attribute tool in ArcGIS Pro to select all the birch and pine trees over 35 yr old from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?
+
+
+|  A  | B | C |
+|-----|--:|--:|
+|Birch|  5| 50|
+|Birch|  6| 75|
+|Pine | 20| 35|
+|Pine | 25| 45|
+|Oak  | 10| 30|
+|Maple| 35| 60|
+
+
+
+
+
+
+
+### File Size vs. Resolution
+    
+You have two raster images that cover the exact same area (same extent).  Raster image 'A' is a DEM (one band) and a cell size of 100 m.  Raster image 'B' is an RGB color image (three bands) and a cell size of 25 m.  If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?",
+
+
+
+You have two raster images that cover the exact same area (same extent).  Raster image 'A' is a DEM (one band) and a cell size of 100 m.  Raster image 'B' is an RGB color image (three bands) and a cell size of 50 m.  If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?",
+
+
+
+
+
+# Flowchart 
+
+Create a flow chart to represent the analysis steps you would need to conduct to answer the following question. Either draw your flowchart by hand, use this [online tool](https://app.diagrams.net/) or use a software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.
+
+
+
+### Locations for a New Blue Jays Stadium
+
+The Toronto Blue Jays are considering replacing the Rogers Centre with a new stadium. You have been hired by the city of Toronto to identify candidate sites for the new Blue Jays stadium. The ideal location must meet the following criteria:
+
+* On land zoned for commercial or industrial development.
+* At least 300 m away from any heritage buildings.
+* Within 1000 m of a subway stop served by Line 1 or 2.
+* Within 500 m of an arterial roadway.
+* Outside of flood-prone areas (flood probability < 10%).
+
+You have the following data to work with. Create a flowchart to show how you would go about identifying potential stadium locations.
+
+
+
+|        A         |   B   | C  |      D      |                             E                             |
+|------------------|-------|----|-------------|-----------------------------------------------------------|
+|Zoning            |Polygon|.shp|UTM Zone 17 N|Zoning Class(Residential / Commercial / Industrial / etc.) |
+|Heritage buildings|Points |.csv|WGS 1984     |Age / Address / Owner                                      |
+|Subway stops      |Points |.shp|UTM Zone 17 N|Line(1/2/3/4)                                              |
+|Roads             |Line   |.shp|UTM Zone 17 N|Type(Arterial / Highway / Street / Alleyway)               |
+|Flood probability |Raster |.tif|UTM Zone 17 N|Annual flood probability (0-100%)                          |
+
+
+
+
+
+
+
+# Miscellaneous Questions
+
+
+For these questions, **make sure** to use the answer sheet, which can be found which can be found [here](https://raw.githubusercontent.com/GEOS270/FinalExam/main/sheets/0.zip).  
+
+
+
+
+
+
+## Matching
+
+Match the numbered items to the values from the answer bank.  Some answers may be used more than once.  Only type the letter corresponding to you choice on your answer sheet.  **Do not** type out the full word, only type the letter corresponding to the answer.  Answers are not case sensitive.
+
+**1**	
+Match the following data to their corresponding measurement scale:
+
+Answer Bank: **a** Interval	**b** Ordinal	**c** Nominal	**d** Ratio	
+
+ * **1.0**	
+IQ Score
+
+
+ * **1.1**	
+IQ Score
+
+
+ * **1.2**	
+Temperature (Celsius)
+
+
+ * **1.3**	
+Dog Size (Small/Medium/Large)
+
+
+ * **1.4**	
+Tree Species
+
+
+ * **1.5**	
+Letter Grade (e.g. A/B/C)
+
+
+ * **1.6**	
+Monthly Income
+
+
+ * **1.7**	
+Tree Species
+
+
+
+
+## Fill in the Blanks
+
+Enter the words or phrases that best complete the statement.  Blanks are labelled with with an numeric code in brackets (e.g., [11.1]) which has a corresponding slot in your answer sheet.  Spelling does not need to be exact, but **make sure** to type out acronyms/abbreviations. For example, if the answer is *Geographic Information Science* but you entered **GIS**, your answer will be marked as incorrect.
+
+**2**	
+[  <sub>2.0</sub>  ] is the process of assigning spatial [  <sub>2.1</sub>  ] to images like scanned historical maps.
+
+**3**	
+Resolution is a branch of your [  <sub>3.0</sub>  ], scale is a property of your [  <sub>3.1</sub>  ].
+
+**4**	
+[  <sub>4.0</sub>  ] is a branch of [  <sub>4.1</sub>  ] that deals with the nature of right and wrong.
+
+**5**	
+Ptolemy's Geographia is the first known example of a(n) [  <sub>5.0</sub>  ]. It consisted of eight volumes and a [  <sub>5.1</sub>  ] world map.
+
+**6**	
+NDVI is an index derived from satellite [  <sub>6.0</sub>  ] that can be used to gauge the health/density of [  <sub>6.1</sub>  ].
+
+**7**	
+Random sampling is a/an [  <sub>7.0</sub>  ] method for collecting spatial information.  Stratified random sampling and cluster sampling are [  <sub>7.1</sub>  ] methods for collecting spatial information that are designed to help address some of the downsides of random sampling.
+
+**8**	
+Spatial [  <sub>8.0</sub>  ] is the process of estimating the values between point observations to create a continuous surface. A common method known as [  <sub>8.1</sub>  ] uses a function to estimate cell values based on their proximity to a set of known point observations.
+
+
+
+## Multiple Choice
+
+Type the letter corresponding to you choice on your answer sheet.  **Do not** type out the full word, only type the letter corresponding to the answer.  Answers are not case sensitive.
+
+**9.0**	
+This issue arises when we assume we can take data presented in aggregate and aggregate it again at a higher level.
+
+* **a** Ecological Fallacy
+* **b** Modifiable Aerial Unit Problem
+* **c** Aggregation Error
+* **d** Atomistic Fallacy
+* **e** Extrapolation Error
+
+
+**10.0**	
+These chart/plots are best suited for showing the frequency distribution of a discrete variable
+
+* **a** Histograms
+* **b** Scatter Plots
+* **c** Line Charts
+* **d** Box Plots
+* **e** Bar Charts
+
+
+**11.0**	
+This metric gives us a sense of the dispersion in a data set, but it is not influenced by outliers.
+
+* **a** Mean
+* **b** Dispersion Index
+* **c** Range
+* **d** Standard Deviation
+* **e** Inter-Quartile Range
+
+
+**12.0**	
+These chart/plots are best suited for showing the relationship between two variables:
+
+* **a** Bar Charts
+* **b** Histograms
+* **c** Scatter Plots
+* **d** Line Charts
+* **e** Box Plots
+
+
+**13.0**	
+When making a map of global population density, you should use this type of projection to ensure accurate calculations:
+
+* **a** Conformal Cylindrical
+* **b** Universal Transverse Mercator
+* **c** Equidistant Azimuthal
+* **d** Conformal Conic
+* **e** Equal Area
+
+
+**14.0**	
+Map Rock is a 12,000-year stone engraving that that shows a map of which river?
+
+* **a** Murray Darling River
+* **b** Nile River
+* **c** Dyje River
+* **d** Snake River
+* **e** Fraser River
+
+
+**15.0**	
+This type of analysis lets us look at the relationship one variable has with another.
+
+* **a** Random Forest
+* **b** Line Plotting
+* **c** R2 Scoring
+* **d** Linear Regression
+* **e** Natural Breaks Classification
+
+
+
+
+## True False
+
+Type the letter corresponding to you choice on your answer sheet.  **Do not** type out the full word, only type the letter corresponding to the answer.  Answers are not case sensitive.
+
+**16.0**	
+The first computer based geographic information system was invented in the United States.
+
+* **a** True
+* **b** False
+
+
+**17.0**	
+Everything is related to everything else, but farther things are more closely related than nearer things.
+
+* **a** True
+* **b** False
+
+
+**18.0**	
+K-means is a type of unsupervised classification method.
+
+* **a** False
+* **b** True
+
+
+**19.0**	
+Neural Networks are a type of unsupervised classification method.
+
+* **a** True
+* **b** False
+
+
+**20.0**	
+Cartography originated in Europe.
+
+* **a** True
+* **b** False
+
+
