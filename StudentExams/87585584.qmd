@@ -174,7 +174,7 @@ You have the following data to work with. Create a flowchart to show how you wou
 
 # Mixed Questions
 
-For these questions, download the answer sheet for your exam, which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/0_AnswerSheet.zip).  
+For these questions, download the answer sheet for your exam, which can be found [here](https://github.com/GEOS270/FinalExam/raw/main/sheets/87585584_AnswerSheet.zip).  
 
 * It is **very important** make sure the file is named and formatted properly **before** you upload it.  
     * It should be formatted as follows: **StudentNumber_AnswerSheet.csv** .  
