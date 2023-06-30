@@ -178,6 +178,7 @@ ul.task-list li input[type="checkbox"] {
 <li>When we are only concerned for aesthetics, we can go with a compromise projection.</li>
 </ul></li>
 </ul>
+<p><strong>The Map</strong>: * WGS 1984 - not projected, should never use for a 2D map * Web Mercator - cylindrical conformal projection. Okay for global applications (eg. google maps) but causes sever distortions away from tangent line (the equator) * Lambert Conformal Conic - does a good job for Canada maintaining shape and minimizing most distortion, but not an equal area so won’t give the best area calculations. * Albers Equal Area - visually not quit as nice as Lambert but gives true area calculations</p>
 </section>
 <section id="data-models" class="level3">
 <h3 class="anchored" data-anchor-id="data-models">Data Models</h3>
@@ -235,11 +236,17 @@ ul.task-list li input[type="checkbox"] {
 <li>Still impacts data volume &gt; more vertices = larger file &amp; longer processing times.</li>
 </ul></li>
 </ul>
-<p><strong>Examples</strong></p>
+<p><strong>Analysis in Module 4</strong></p>
 <ul>
-<li>Any two are fine as long as they’re correct
+<li><p>NDVI was raster - used to identify green vegetation areas</p></li>
+<li><p>Census Data - vector used to give income/housing cost for various areas</p>
 <ul>
 <li>Some folks will probably try to say things like census data are raster. Its not, deduct pts for that!</li>
+</ul></li>
+<li><p>Two approaches</p>
+<ul>
+<li>1 zonal stats to “stamp” census data over raster data to get mean NDVI per census block. Quick and easy but gives less info</li>
+<li>2 reclassify to ID green vegetation then convert NDVI to vector then intersect &gt; summarize &gt; join to get total green veg area per CT. More involved but can also give us a bit more info</li>
 </ul></li>
 </ul>
 </section>
