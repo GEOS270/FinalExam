@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GEOS 270 Final Exam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="FullExam_files/libs/clipboard/clipboard.min.js"></script>
+<script src="FullExam_files/libs/quarto-html/quarto.js"></script>
+<script src="FullExam_files/libs/quarto-html/popper.min.js"></script>
+<script src="FullExam_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="FullExam_files/libs/quarto-html/anchor.min.js"></script>
+<link href="FullExam_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="FullExam_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="FullExam_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="FullExam_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="FullExam_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#written-responses" id="toc-written-responses" class="nav-link" data-scroll-target="#written-responses">Written Responses</a>
+  <ul class="collapse">
+  <li><a href="#essay" id="toc-essay" class="nav-link" data-scroll-target="#essay">Essay</a>
+  <ul class="collapse">
+  <li><a href="#coordinate-systems" id="toc-coordinate-systems" class="nav-link" data-scroll-target="#coordinate-systems">Coordinate Systems</a></li>
+  <li><a href="#answer" id="toc-answer" class="nav-link" data-scroll-target="#answer">Answer</a></li>
+  <li><a href="#data-models" id="toc-data-models" class="nav-link" data-scroll-target="#data-models">Data Models</a></li>
+  <li><a href="#answer-1" id="toc-answer-1" class="nav-link" data-scroll-target="#answer-1">Answer</a></li>
+  </ul></li>
+  <li><a href="#short-answer" id="toc-short-answer" class="nav-link" data-scroll-target="#short-answer">Short Answer</a>
+  <ul class="collapse">
+  <li><a href="#normalization" id="toc-normalization" class="nav-link" data-scroll-target="#normalization">Normalization</a></li>
+  <li><a href="#answer-2" id="toc-answer-2" class="nav-link" data-scroll-target="#answer-2">Answer</a></li>
+  <li><a href="#autocorrelation" id="toc-autocorrelation" class="nav-link" data-scroll-target="#autocorrelation">Autocorrelation</a></li>
+  <li><a href="#answer-3" id="toc-answer-3" class="nav-link" data-scroll-target="#answer-3">Answer</a></li>
+  <li><a href="#spatial-patterns" id="toc-spatial-patterns" class="nav-link" data-scroll-target="#spatial-patterns">Spatial Patterns</a></li>
+  <li><a href="#answer-4" id="toc-answer-4" class="nav-link" data-scroll-target="#answer-4">Answer</a></li>
+  <li><a href="#vector-tools" id="toc-vector-tools" class="nav-link" data-scroll-target="#vector-tools">Vector Tools</a></li>
+  <li><a href="#answer-5" id="toc-answer-5" class="nav-link" data-scroll-target="#answer-5">Answer</a></li>
+  <li><a href="#raster-tools" id="toc-raster-tools" class="nav-link" data-scroll-target="#raster-tools">Raster Tools</a></li>
+  <li><a href="#answer-6" id="toc-answer-6" class="nav-link" data-scroll-target="#answer-6">Answer</a></li>
+  <li><a href="#select-by-attribute" id="toc-select-by-attribute" class="nav-link" data-scroll-target="#select-by-attribute">Select by Attribute</a></li>
+  <li><a href="#answer-7" id="toc-answer-7" class="nav-link" data-scroll-target="#answer-7">Answer</a></li>
+  <li><a href="#answer-8" id="toc-answer-8" class="nav-link" data-scroll-target="#answer-8">Answer</a></li>
+  <li><a href="#resolution-vs.-file-size" id="toc-resolution-vs.-file-size" class="nav-link" data-scroll-target="#resolution-vs.-file-size">Resolution vs.&nbsp;File Size</a></li>
+  <li><a href="#answer-9" id="toc-answer-9" class="nav-link" data-scroll-target="#answer-9">Answer</a></li>
+  <li><a href="#answer-10" id="toc-answer-10" class="nav-link" data-scroll-target="#answer-10">Answer</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#flowchart" id="toc-flowchart" class="nav-link" data-scroll-target="#flowchart">Flowchart</a>
+  <ul class="collapse">
+  <li><a href="#locations-for-an-ecotourism-resort" id="toc-locations-for-an-ecotourism-resort" class="nav-link" data-scroll-target="#locations-for-an-ecotourism-resort">Locations for an Ecotourism Resort</a></li>
+  <li><a href="#answer-11" id="toc-answer-11" class="nav-link" data-scroll-target="#answer-11">Answer</a></li>
+  <li><a href="#locations-for-a-new-blue-jays-stadium" id="toc-locations-for-a-new-blue-jays-stadium" class="nav-link" data-scroll-target="#locations-for-a-new-blue-jays-stadium">Locations for a New Blue Jays Stadium</a></li>
+  <li><a href="#answer-12" id="toc-answer-12" class="nav-link" data-scroll-target="#answer-12">Answer</a></li>
+  <li><a href="#locations-for-a-cherry-orchard" id="toc-locations-for-a-cherry-orchard" class="nav-link" data-scroll-target="#locations-for-a-cherry-orchard">Locations for a Cherry Orchard</a></li>
+  <li><a href="#answer-13" id="toc-answer-13" class="nav-link" data-scroll-target="#answer-13">Answer</a></li>
+  </ul></li>
+  <li><a href="#mixed-questions" id="toc-mixed-questions" class="nav-link" data-scroll-target="#mixed-questions">Mixed Questions</a>
+  <ul class="collapse">
+  <li><a href="#matching" id="toc-matching" class="nav-link" data-scroll-target="#matching">Matching</a></li>
+  <li><a href="#fill-in-the-blanks" id="toc-fill-in-the-blanks" class="nav-link" data-scroll-target="#fill-in-the-blanks">Fill in the Blanks</a></li>
+  <li><a href="#multiple-choice" id="toc-multiple-choice" class="nav-link" data-scroll-target="#multiple-choice">Multiple Choice</a></li>
+  <li><a href="#true-false" id="toc-true-false" class="nav-link" data-scroll-target="#true-false">True False</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">GEOS 270 Final Exam</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This is the final exam for student number: <strong>0</strong>. Confirm your student number is correct before proceeding. <strong>Do not complete someone else’s exam.</strong></p>
+<section id="instructions" class="level1">
+<h1>Instructions</h1>
+<p>The exam is “open book”, you can reference any resources from the class or online to work through the questions. However, all the work MUST be in your own words. You can not copy from online resources or classmates. Plagiarism will be taken very seriously and could result in failing the exam.</p>
+<p>The exam will be open for 24 hours, but it shouldn’t take you more than a few hours to complete. You only have one attempt to take the exam during the exam. The exam has <strong>three parts</strong>: a written response section, a flowchart section, and a mixed questions. You will save each part as a separate document and upload it to exam page on canvas.</p>
+<p>If you experience extenuating circumstances during the exam you may reach out to me, but I will not be answering any questions related to the content of the exam during the exam period. Do not contact your TAs about the exam, they will not be answering any questions during the exam period.</p>
+<p>Good Luck!</p>
+</section>
+<section id="written-responses" class="level1">
+<h1>Written Responses</h1>
+<p>This section consists of an essay and a handful of short answer questions.</p>
+<ul>
+<li>Type up your essay and short answers response and save them in one <strong>.pdf</strong> document . Name the file: <strong>StudentNumber_WrittenRespones.pdf</strong>
+<ul>
+<li>If your student number were “10011001”, your file would be named: <strong>10011001_WrittenRespones.pdf</strong></li>
+</ul></li>
+</ul>
+<section id="essay" class="level2">
+<h2 class="anchored" data-anchor-id="essay">Essay</h2>
+<p>Pick <strong>one</strong> of the essay prompts below and respond to it. Make sure to list the specify which essay you are choosing to answer. Feel free to include diagrams/figures/sketches if applicable, but do not feel obligated to do so.</p>
+<section id="coordinate-systems" class="level3">
+<h3 class="anchored" data-anchor-id="coordinate-systems">Coordinate Systems</h3>
+<p>In Module 2, you created a map that looked something like the image below. Discuss the steps necessary to create a 2D representation of the earth (or a specific region of the earth) in a GIS and what are the simplifications made at each step? Discuss the considerations (e.g., scale) that must be taken into account when choosing an appropriate map projection? What are the differences between coordinate systems show in this map and when should (or shouldn’t) we use them?</p>
+<p><img src="images/Coordinate_System_Comparison.png" class="img-fluid" style="width:80.0%"></p>
+</section>
+<section id="answer" class="level3">
+<h3 class="anchored" data-anchor-id="answer">Answer</h3>
+<p>Earth &gt; Geoid &gt; Datum &gt; Geographic Coordinate System (Lat/Lon) &gt; Projection</p>
+<ul>
+<li><strong>Geoid</strong> Smooths out topography, measure by satellites, models large scale (eg. continental) undulations of earths crust due to gravity differentials ( on the order of +/-180m)</li>
+<li><strong>Datum</strong> - Oblate Speheroid fit to the geoid, Smooths out remaining elevation differences to create an 3D semi-spherical shape symmetric around the equator (equatorial bulge due to centrifugal force). Fit globally (to center of earth) or locally (surface of earth)</li>
+</ul>
+<p><strong>Geographic Coordinate System (GCS)</strong> - Assign a GCS (eg. Latitude &amp; Longitude) to the datum * Relates locations on the earth’s surface to the datum(spheroid) * Latitude &amp; Longitude is a spherical coordinate system that uses degrees from the equator &amp; prime meridian * Lat - equator +-90 * Lon - prime meridian +-180 * Not the only option, could use radians, but degrees are a bit easier to understand (an especially astute point if anyone mentions this)</p>
+<p><strong>Projected Coordinate System</strong> - Transforms the 3D GCS so that it can be displayed more effectively on a 2D map.</p>
+<ul>
+<li>Key difference is a 2D vs.&nbsp;3D coordinate system
+<ul>
+<li>Transforms the 3D GCS so that it can be displayed more effectively on a 2D map</li>
+<li>‘Correcting’ for curvature of the earth</li>
+<li>Any calculations you do in a Lat/Lon will be in degrees and therefore meaningless (area, distance, etc).</li>
+</ul></li>
+<li>A map is a 2D entity so when you map unprotected data everything looks ‘spaghettified’ at the poles because we are not accounting for the convergence of meridians (lines of longitude) at the poles.</li>
+<li>All projections induce error, but in different ways some more/some less. <strong>Must</strong> consider the scale of the map <strong>and</strong> the application of the map.</li>
+<li><strong>Scale:</strong>
+<ul>
+<li>Small scale maps = large area, large scale maps = small area</li>
+<li>Counter to common understanding of term and easy to mix up. Don’t knock them too hard if the mix them up as long as they’re logically consistent w/ the ideas.</li>
+</ul></li>
+<li><strong>Types:</strong>
+<ul>
+<li>Cylindrical projections are generally best suited for small scale (i.e.&nbsp;global) applications.</li>
+<li>Conic are well suited for hemispheric and regional applications in the mid-latitudes (eg. Mapping Canada or BC)</li>
+<li>Azimuthal are good for the poles or a select few other applications (e.g.&nbsp;airports)
+<ul>
+<li>Didn’t spend much time on these - they should mention for full credit, but don’t knock too much if they can’t explain it</li>
+</ul></li>
+<li>Universal Transverse Mercator are good for large scale applications (eg. city of Vancouver)</li>
+</ul></li>
+<li><strong>Application</strong>
+<ul>
+<li>Calculating area, <strong>must</strong> use an equal area projection for most scales, UTM is fine for large scale (eg. a city) application.</li>
+<li>For small scale - if we need to follow bearings (navigation) or need shape to be maintained go with a conformal projection (eg. Mercator)</li>
+<li>When we are only concerned for aesthetics, we can go with a compromise projection.</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-models" class="level3">
+<h3 class="anchored" data-anchor-id="data-models">Data Models</h3>
+<p>In Module 4, you assessed the relationship between housing cost and vegetation cover and created a map that looked something like the image below. Discuss the key differences between raster and vector data; what type(s) of phenomena they are best suited to represent, and what does the term ‘resolution’ describe in the context of these data models, and how is resolution related to, and different from, the concept of scale? How did you make use of both raster and vector data to investigate the relationship between housing cost and vegetation cover in Vancouver?</p>
+<p><img src="images/Van_NDVI_Map.png" class="img-fluid" style="width:80.0%"></p>
+</section>
+<section id="answer-1" class="level3">
+<h3 class="anchored" data-anchor-id="answer-1">Answer</h3>
+<p><strong>Raster</strong></p>
+<ul>
+<li><p>How - Grid of equally sized/spaced cell</p></li>
+<li><p>Attributes: <strong>only one</strong> value per cell</p></li>
+<li><p>Cell size determines resolution</p>
+<ul>
+<li>Resolution is explicitly defined, unlike vector data where its more ambiguous.</li>
+</ul></li>
+<li><p>Scale (spatial coverage) determined by # of cells (columns x rows)</p></li>
+<li><p>Can stack raster bands to add multiple attribute values (eg. RGB image)</p></li>
+<li><p>Phenomena - Continuous Fields</p>
+<ul>
+<li>Vary across space, every location has a value</li>
+<li>Can work for discrete objects but generally less effective than vector</li>
+<li>Continuous phenomena can have discrete/qualitative values (e.g.&nbsp;land use) or continuous/quantitative values (e.g.&nbsp;temperature)</li>
+</ul></li>
+<li><p>Computationally efficient for overlays</p>
+<ul>
+<li>Raster math allows for easy calculations, algebraic expressions with layers</li>
+</ul></li>
+<li><p>Large data volumes, re-projecting can be computationally expensive</p></li>
+</ul>
+<p><strong>Vector</strong></p>
+<ul>
+<li><p>How - Point, Line, or Polygon objects with attributes linked in separate table.</p></li>
+<li><p>Number of vertices (points composing lines/polygons) determines resolution</p>
+<ul>
+<li>Less explicit than raster</li>
+</ul></li>
+<li><p>Scale (spatial coverage) determined by bounds (north south/east west extent)</p></li>
+<li><p>Essentially unlimited number of attributes per object</p></li>
+<li><p>Phenomena - Discrete Objects</p>
+<ul>
+<li>Clearly defined measurable values</li>
+<li>Can work for continuous phenomena but generally less effective than raster</li>
+</ul></li>
+<li><p>Efficient querying and lookup of values</p></li>
+<li><p>Overlays can be computationally expensive for larger layers</p></li>
+<li><p>Examples - any two are fine as long as they’re correct - some folks will probably try to say things like DEM are vectors (its not!, deduct pts for that)</p></li>
+<li><p>Scale/resolution discussion: scale is a property of the map/analysis, resolution is a property of the data.</p>
+<ul>
+<li>Resolution will dictate the scale of analysis we can conduct, scale will dictate desired resolution.</li>
+<li>Raster resolution is easier/more straight forward to define &gt; its the cell size - has a significant impact on data volume</li>
+<li>File size increases <strong>exponentially</strong> with decreasing cell size, and linearly with increasing number of bands.</li>
+<li>Larger files = longer processing times</li>
+<li>Vector resolution is less straightforward &gt; number of vertices in a polygon/line &gt; not typically explicitly defined for a file, unlike cell size</li>
+<li>Still impacts data volume &gt; more vertices = larger file &amp; longer processing times.</li>
+</ul></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Any two are fine as long as they’re correct
+<ul>
+<li>Some folks will probably try to say things like census data are raster. Its not, deduct pts for that!</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="short-answer" class="level2">
+<h2 class="anchored" data-anchor-id="short-answer">Short Answer</h2>
+<p>You can answer these questions briefly in sentence or bullet point format.</p>
+<section id="normalization" class="level3">
+<h3 class="anchored" data-anchor-id="normalization">Normalization</h3>
+<p>What is the data normalization? When/why might you want do it? List two examples from lab where we normalized data and why we needed to do it?</p>
+</section>
+<section id="answer-2" class="level3">
+<h3 class="anchored" data-anchor-id="answer-2">Answer</h3>
+<p>Normalizing, is the process of dividing one variable by another. It can highlight patterns by calculating rates or ratios and changing units. It is used to account for confounding relationships, Confounding variables can be correlated but do not have to be correlated. Examples from lab: Population density, % income on food, % green space, Kernel density (not strictly speaking normalization, but we’ll count it). - could be other examples I’m forgetting <strong>Two examples &amp; explanations</strong> necessary for full credit.</p>
+</section>
+<section id="autocorrelation" class="level3">
+<h3 class="anchored" data-anchor-id="autocorrelation">Autocorrelation</h3>
+<p>What is spatial auto-correlation? What are two tools we covered that we can use to create a continuous field from discrete point observations of phenomena that exhibit positive spatial auto-correlation?</p>
+</section>
+<section id="answer-3" class="level3">
+<h3 class="anchored" data-anchor-id="answer-3">Answer</h3>
+<p>The measure of similarity between objects across space. Positive (clustering) - Negative (dispersed) - near zero (random). It allows us to make some a key assumptions when representing spatial data (eg. spatial inferences) but also violates the key assumptions of many statistical models. An astute answer will mention Tobler’s Law. - Examples - Kernel Density and Inverse Distance Weighting are the key ones I’m looking for - but they could list other examples for partial credit if they give a good explanation. ie, the raster model is predicated on the assumption that a cell is representative of the area it covers (spatial auto correlation) - not a ‘tool’, but if they give a good explanation give partial credit for something like that.</p>
+</section>
+<section id="spatial-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-patterns">Spatial Patterns</h3>
+<p>In lecture I contrasted agricultural systems (e.g., a corn field) with natural systems (e.g., a tundra ecosystem) when describing how we measure similarity or dissimilarity across space. What were the terms used to describe similarity or dissimilarity across space? Which one would best describe a corn field and which would better describe a tundra ecosystem and why?</p>
+</section>
+<section id="answer-4" class="level3">
+<h3 class="anchored" data-anchor-id="answer-4">Answer</h3>
+<p>Heterogeneity: Dissimilarity of phenomena across space. Homogeneity: Clustering of similar phenomena in space. Statistical tests often assumes homogeneity, but the natural world is typically heterogeneity (An astute point for full credit!). Corn - homogenous, Tundra - heterogeneous.</p>
+</section>
+<section id="vector-tools" class="level3">
+<h3 class="anchored" data-anchor-id="vector-tools">Vector Tools</h3>
+<p>Compare and contrast the clip and intersect tools. Which of these tools (clip or intersect) did we use to identify the population at risk from a Tsunami in Port Alberni? Could we have used the other tool (clip or intersect) instead?</p>
+</section>
+<section id="answer-5" class="level3">
+<h3 class="anchored" data-anchor-id="answer-5">Answer</h3>
+<p>Clip - directional, only two inputs, used to cut down input by clip layer. Intersect - non-directional, can take more than two inputs, cuts layers down by spatial overlap <strong>and</strong> merges attributes. Used intersect, clip would have worked too though because we were only interested in the spatial relationship when identifying the inundation zone.</p>
+</section>
+<section id="raster-tools" class="level3">
+<h3 class="anchored" data-anchor-id="raster-tools">Raster Tools</h3>
+<p>Compare and contrast the raster calculator and weighted overlay tools. Which of these tools (raster calculator or weighted overlay) did we use to identify the suitability Tsunami shelters in Port Alberni? Could we have used the other tool (raster calculator or weighted overlay) instead?</p>
+</section>
+<section id="answer-6" class="level3">
+<h3 class="anchored" data-anchor-id="answer-6">Answer</h3>
+<p>Raster Calculator - Treats layers as variables in equation. Weighted overlay - only for discrete variables, requires explicit definition/classification of inputs. Can do similar things to calculator, but not all that calculator can do. Used weighted overlay, could have used raster calculator instead.</p>
+</section>
+<section id="select-by-attribute" class="level3">
+<h3 class="anchored" data-anchor-id="select-by-attribute">Select by Attribute</h3>
+The table below contains a list records for different trees in an area. The select by attribute tool can be used to query records in a table. For example, if I needed to find all the maple trees , I could select:
+<p>
+<strong>Where:</strong> Species = Maple
+</p>
+<p>How would you use the select by attribute tool in ArcGIS Pro to select all the dogwood and pine trees over 5 m tall from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Species</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: right;">Height</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dogwood</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>Dogwood</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="odd">
+<td>Pine</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="even">
+<td>Pine</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="odd">
+<td>Oak</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td>Maple</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">60</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-7" class="level3">
+<h3 class="anchored" data-anchor-id="answer-7">Answer</h3>
+<p>Where Species = Pine <strong>And</strong> Height &gt; 5 <strong>OR</strong> Species = Dogwood <strong>And</strong> Height &gt; 5 Returns 3 records Variations are fine but must have proper use of the <strong>or</strong> If statement is wrong, but number of rows are correct, answer is insufficient give 2 pts. Half credit if they confuse records (rows) with attributes (columns)</p>
+<p>How would you use the select by attribute tool in ArcGIS Pro to select all the birch and pine trees over 35 yr old from the table above? Write out the query as it would be structured in the select by attribute tool, you can see the text above for a hint on how to format your answer. How many records would your query return?</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Species</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: right;">Height</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Birch</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>Birch</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr class="odd">
+<td>Pine</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr class="even">
+<td>Pine</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="odd">
+<td>Oak</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td>Maple</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">60</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-8" class="level3">
+<h3 class="anchored" data-anchor-id="answer-8">Answer</h3>
+<p>Where Species = Pine <strong>And</strong> Age &gt; 35 <strong>OR</strong> Species = Birch <strong>And</strong> Age &gt; 35 Returns 3 records Variations are fine but must have proper use of the <strong>or</strong> If statement is wrong, but number of rows are correct, answer is insufficient give 2 pts. Half credit if they confuse records (rows) with attributes (columns)</p>
+</section>
+<section id="resolution-vs.-file-size" class="level3">
+<h3 class="anchored" data-anchor-id="resolution-vs.-file-size">Resolution vs.&nbsp;File Size</h3>
+<p>You have two raster images that cover the exact same area (same extent). Raster image ‘A’ is a DEM (one band) and a cell size of 100 m. Raster image ‘B’ is an RGB color image (three bands) and a cell size of 25 m. If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?“,</p>
+</section>
+<section id="answer-9" class="level3">
+<h3 class="anchored" data-anchor-id="answer-9">Answer</h3>
+<p><strong>480 mb</strong></p>
+<p>File size is linearly dependent on the number of bans and exponentially dependent upon the cell size</p>
+<p>A 100m cell size, B 25 m cell size</p>
+<p>B is 4x smaller than A: 100/25 = 4</p>
+<p>One band of B is: 4<sup>2</sup> = 16 times lager; 16*10 mb = 160 mb</p>
+<p>Since B has 3 bands: 160 mb * 3 bands = 480 mb</p>
+<p>You have two raster images that cover the exact same area (same extent). Raster image ‘A’ is a DEM (one band) and a cell size of 100 m. Raster image ‘B’ is an RGB color image (three bands) and a cell size of 50 m. If raster A has a file size of 10 mb (megabytes), what is the approximate file size of layer B in mb?“,</p>
+</section>
+<section id="answer-10" class="level3">
+<h3 class="anchored" data-anchor-id="answer-10">Answer</h3>
+<p>File size is linearly dependent on the number of bans and exponentially dependent upon the cell size</p>
+<p><strong>120</strong> mb</p>
+<p>File size is linearly dependent on the number of bans and exponentially dependent upon the cell size</p>
+<p>A 100m cell size, B 50 m cell size</p>
+<p>B is 4x smaller than A: 100/50 = 2</p>
+<p>One band of B is: 2<sup>2</sup> = 4 times lager; 4*10 mb = 40 mb</p>
+<p>Since B has 3 bands: 40 mb * 3 bands = 120 mb</p>
+</section>
+</section>
+</section>
+<section id="flowchart" class="level1">
+<h1>Flowchart</h1>
+<p>Create a flow chart outlining how you would use GIS to answer the following prompt. Either draw your flowchart by hand, use this <a href="https://app.diagrams.net/">online tool</a>, or use another software package (eg. power point, etc.) and upload it here. Use appropriate symbology to differentiate between layers (inputs/ intermediate layers /outputs) and processes and use arrows to connect them. You can include a written response as well to further explain steps/choices in your model if you wish.</p>
+<ul>
+<li>Save the file as either a .pdf, png, or jpg and name it as follows: <strong>StudentNumber_Flowchart.pdf</strong>
+<ul>
+<li>If your student number were “10011001”, your file would be named: <strong>10011001_FlowChart.pdf</strong>, <strong>10011001_FlowChart.png</strong>, or <strong>10011001_FlowChart.jpg</strong>, depending on the file type you chose.</li>
+</ul></li>
+<li>Make sure to upload the flowchart as a separate file. Do not include it in your written answers or it <strong>will not be marked</strong>.</li>
+</ul>
+<section id="locations-for-an-ecotourism-resort" class="level3">
+<h3 class="anchored" data-anchor-id="locations-for-an-ecotourism-resort">Locations for an Ecotourism Resort</h3>
+<p>An investor wishes to develop a new eco-tourism resort for wildlife sightseeing in Northern BC. You have been hired as a GIS consultant to identify several candidate areas for building the resort. The ideal location must meet the following criteria:</p>
+<ul>
+<li>Within 50 km of an air strip, but more than 15 km from one.</li>
+<li>Within wolf, grizzly bear, and caribou’s geographic ranges.</li>
+<li>On privately owned land (i.e.&nbsp;not First Nations or Government).</li>
+<li>Within low slope areas (slope &lt; 5%).</li>
+<li>Below 2000m elevation.</li>
+</ul>
+<p>You have the following data to work with. Create a flowchart to show how you would go about identifying potential resort locations.</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 6%">
+<col style="width: 3%">
+<col style="width: 19%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Data Type</th>
+<th>File type</th>
+<th>Coordinate System</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Airstrips</td>
+<td>Points</td>
+<td>.csv</td>
+<td>WGS 1984</td>
+<td>Locations of existing air strips</td>
+</tr>
+<tr class="even">
+<td>DEM</td>
+<td>Raster</td>
+<td>.tif</td>
+<td>BC Albers Equal Area</td>
+<td>Elevation</td>
+</tr>
+<tr class="odd">
+<td>Wolf</td>
+<td>Polygon</td>
+<td>.shp</td>
+<td>BC Albers Equal Area</td>
+<td>Wolf Population Range</td>
+</tr>
+<tr class="even">
+<td>Bear</td>
+<td>Polygon</td>
+<td>.shp</td>
+<td>BC Albers Equal Area</td>
+<td>Grizzly Population RangeBlack Bear Population Range</td>
+</tr>
+<tr class="odd">
+<td>Caribou</td>
+<td>Polygon</td>
+<td>.shp</td>
+<td>BC Albers Equal Area</td>
+<td>Caribou Population Range</td>
+</tr>
+<tr class="even">
+<td>Land Parcels</td>
+<td>Polygon</td>
+<td>.shp</td>
+<td>BC Albers Equal Area</td>
+<td>Land Ownership Type(First Nations / Government / Private)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-11" class="level3">
+<h3 class="anchored" data-anchor-id="answer-11">Answer</h3>
+<p><img src="images/WildlifeViewing.png" class="img-fluid"></p>
+</section>
+<section id="locations-for-a-new-blue-jays-stadium" class="level3">
+<h3 class="anchored" data-anchor-id="locations-for-a-new-blue-jays-stadium">Locations for a New Blue Jays Stadium</h3>
+<p>The Toronto Blue Jays are considering replacing the Rogers Centre with a new stadium. You have been hired by the city of Toronto to identify candidate sites for the new Blue Jays stadium. The ideal location must meet the following criteria:</p>
+<ul>
+<li>On land zoned for commercial or industrial development.</li>
+<li>At least 300 m away from any heritage buildings.</li>
+<li>Within 1000 m of a subway stop served by Line 1 or 2.</li>
+<li>Within 500 m of an arterial roadway.</li>
+<li>Outside of flood-prone areas (flood probability &lt; 10%).</li>
+</ul>
+<p>You have the following data to work with. Create a flowchart to show how you would go about identifying potential stadium locations.</p>
+<table class="table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 6%">
+<col style="width: 3%">
+<col style="width: 12%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Data Type</th>
+<th>File type</th>
+<th>Coordinate System</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Zoning</td>
+<td>Polygon</td>
+<td>.shp</td>
+<td>UTM Zone 17 N</td>
+<td>Zoning Class(Residential / Commercial / Industrial / etc.)</td>
+</tr>
+<tr class="even">
+<td>Heritage buildings</td>
+<td>Points</td>
+<td>.csv</td>
+<td>WGS 1984</td>
+<td>Age / Address / Owner</td>
+</tr>
+<tr class="odd">
+<td>Subway stops</td>
+<td>Points</td>
+<td>.shp</td>
+<td>UTM Zone 17 N</td>
+<td>Line(1/2/3/4)</td>
+</tr>
+<tr class="even">
+<td>Roads</td>
+<td>Line</td>
+<td>.shp</td>
+<td>UTM Zone 17 N</td>
+<td>Type(Arterial / Highway / Street / Alleyway)</td>
+</tr>
+<tr class="odd">
+<td>Flood probability</td>
+<td>Raster</td>
+<td>.tif</td>
+<td>UTM Zone 17 N</td>
+<td>Annual flood probability (0-100%)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-12" class="level3">
+<h3 class="anchored" data-anchor-id="answer-12">Answer</h3>
+<p><img src="images/BlueJays.png" class="img-fluid"></p>
+</section>
+<section id="locations-for-a-cherry-orchard" class="level3">
+<h3 class="anchored" data-anchor-id="locations-for-a-cherry-orchard">Locations for a Cherry Orchard</h3>
+<p>You have been hired as a GIS consultant to identify the best locations in BC to start a new organic cherry orchard. The ideal location must meet the following criteria:</p>
+<ul>
+<li>Be on land already used for agriculture.</li>
+<li>Precipitation must be greater than 500 mm/year but less than 1500 mm/year.</li>
+<li>Mean winter temperature must be less than 4 degrees but greater than -10 degrees.</li>
+<li>Greater than 250 m away from First or Second order streams.</li>
+<li>Within 50 km of a farmers market.</li>
+</ul>
+<p>You have the following data to work with. Create a flowchart to show how you would go about identifying potential orchard locations.</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 5%">
+<col style="width: 4%">
+<col style="width: 18%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Data Type</th>
+<th>File type</th>
+<th>Coordinate System</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Precipitation</td>
+<td>Raster</td>
+<td>.tiff</td>
+<td>BC Albers Equal Area</td>
+<td>Mean Annual Precipitation</td>
+</tr>
+<tr class="even">
+<td>Temperature</td>
+<td>Raster</td>
+<td>.tiff</td>
+<td>BC Albers Equal Area</td>
+<td>Mean Winter Temperature</td>
+</tr>
+<tr class="odd">
+<td>LandUse</td>
+<td>Raster</td>
+<td>.tiff</td>
+<td>BC Albers Equal Area</td>
+<td>Land Use Category,(Agriculture,Forest,Urban,Water,Grassland)</td>
+</tr>
+<tr class="even">
+<td>Farmers Markets</td>
+<td>Point</td>
+<td>.csv</td>
+<td>WGS 1984</td>
+<td>Name</td>
+</tr>
+<tr class="odd">
+<td>Streams</td>
+<td>Line</td>
+<td>.shp</td>
+<td>BC Albers Equal Area</td>
+<td>Order(First,Second,Third,etc)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-13" class="level3">
+<h3 class="anchored" data-anchor-id="answer-13">Answer</h3>
+<p><img src="images/Cherry.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="mixed-questions" class="level1">
+<h1>Mixed Questions</h1>
+<p>For these questions, download the answer sheet for your exam, which can be found <a href="https://github.com/GEOS270/FinalExam/raw/main/sheets/0_AnswerSheet.zip">here</a>.</p>
+<ul>
+<li>It is <strong>very important</strong> make sure the file is named and formatted properly <strong>before</strong> you upload it.
+<ul>
+<li>It should be formatted as follows: <strong>StudentNumber_AnswerSheet.csv</strong> .<br>
+</li>
+<li>If your student number were “10011001”, your file would be named: <strong>10011001_AnswerSheet.csv</strong></li>
+</ul></li>
+<li><strong>Do not</strong> upload the answer sheet as a .numbers, .xls, or any other type of file. Only upload a .csv file for your answer sheet.
+<ul>
+<li>Canvas will convert .numbers, .xls, etc to a .pdf and which cannot be graded automatically.<br>
+</li>
+<li>Answer sheets that cannot be graded automatically will incur a significant penalty.</li>
+</ul></li>
+<li>The answer sheet file is already named and formatted properly for you, but if you accidentally save in a different format need help exporting a .csv file, you can refer to the following instructions:
+<ul>
+<li>For the <a href="https://support.apple.com/en-ca/guide/numbers/tan3b922d4ad/mac">Numbers</a> application on a Mac</li>
+<li>For <a href="https://support.microsoft.com/en-au/office/save-a-workbook-to-text-format-txt-or-csv-3e9a9d6c-70da-4255-aa28-fcacf1f081e6">Excel</a> on Windows.</li>
+</ul></li>
+</ul>
+<section id="matching" class="level2">
+<h2 class="anchored" data-anchor-id="matching">Matching</h2>
+<p>Match the numbered items to the values from the answer bank. Some answers may be used more than once. Only type the letter corresponding to you choice on your answer sheet. <strong>Do not</strong> type out the full word, only type the letter corresponding to the answer. Answers are not case sensitive.</p>
+<p><strong>1</strong><br>
+Match the following data to their corresponding measurement scale:</p>
+<p>Answer Bank: <strong>a</strong> Nominal <strong>b</strong> Ordinal <strong>c</strong> Ratio</p>
+<ul>
+<li><p><strong>1.0</strong><br>
+Colors</p></li>
+<li><p><strong>1.1</strong><br>
+Tree Species</p></li>
+<li><p><strong>1.2</strong><br>
+Dog Size (Small/Medium/Large)</p></li>
+<li><p><strong>1.3</strong><br>
+Temperature (Kelvin)</p></li>
+<li><p><strong>1.4</strong><br>
+Dog Size (Small/Medium/Large)</p></li>
+<li><p><strong>1.5</strong><br>
+Tree Species</p></li>
+<li><p><strong>1.6</strong><br>
+Monthly Income</p></li>
+<li><p><strong>1.7</strong><br>
+Letter Grade (e.g.&nbsp;A/B/C)</p></li>
+</ul>
+</section>
+<section id="fill-in-the-blanks" class="level2">
+<h2 class="anchored" data-anchor-id="fill-in-the-blanks">Fill in the Blanks</h2>
+<p>Enter the words or phrases that best complete the statement. Blanks are labelled with with an numeric code in brackets (e.g., [11.1]) which has a corresponding slot in your answer sheet. Spelling does not need to be exact, but <strong>make sure</strong> to type out acronyms/abbreviations. For example, if the answer is <em>Geographic Information Science</em> but you entered <strong>GIS</strong>, your answer will be marked as incorrect.</p>
+<p><strong>2</strong><br>
+The [ <sub>2.0</sub> ] arises when we aggregate individual data values into larger [ <sub>2.1</sub> ] with arbitrary boundaries.</p>
+<p><strong>3</strong><br>
+[ <sub>3.0</sub> ] is a technique that assigns spatial [ <sub>3.1</sub> ] to text-based descriptions of locations (eg. street addresses).</p>
+<p><strong>4</strong><br>
+Ptolemy’s Geographia is the first known example of a(n) [ <sub>4.0</sub> ]. It consisted of eight volumes and a [ <sub>4.1</sub> ] world map.</p>
+<p><strong>5</strong><br>
+Spatial [ <sub>5.0</sub> ] is the process of estimating the values between point observations to create a continuous surface. A common method known as [ <sub>5.1</sub> ] uses a function to estimate cell values based on their proximity to a set of known point observations.</p>
+<p><strong>6</strong><br>
+An attribute [ <sub>6.0</sub> ] contains non-spatial data, that is linked to spatial data using an [ <sub>6.1</sub> ].</p>
+<p><strong>7</strong><br>
+NDVI is an index derived from satellite [ <sub>7.0</sub> ] that can be used to gauge the health/density of [ <sub>7.1</sub> ].</p>
+<p><strong>8</strong><br>
+Random sampling is a/an [ <sub>8.0</sub> ] method for collecting spatial information. Stratified random sampling and cluster sampling are [ <sub>8.1</sub> ] methods for collecting spatial information that are designed to help address some of the downsides of random sampling.</p>
+<p><strong>9</strong><br>
+[ <sub>9.0</sub> ] is the process of assigning spatial [ <sub>9.1</sub> ] to images like scanned historical maps.</p>
+<p><strong>10</strong><br>
+[ <sub>10.0</sub> ] is a branch of [ <sub>10.1</sub> ] that deals with the nature of right and wrong.</p>
+<p><strong>11</strong><br>
+Resolution is a property of your [ <sub>11.0</sub> ], scale is a property of your [ <sub>11.1</sub> ].</p>
+<p><strong>12</strong><br>
+Metadata is [ <sub>12.0</sub> ] about [ <sub>12.1</sub> ].</p>
+</section>
+<section id="multiple-choice" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-choice">Multiple Choice</h2>
+<p>Type the letter corresponding to you choice on your answer sheet. <strong>Do not</strong> type out the full word, only type the letter corresponding to the answer. Answers are not case sensitive.</p>
+<p><strong>13.0</strong><br>
+This type of analysis lets us look at the relationship one variable has with another.</p>
+<ul>
+<li><strong>a</strong> R2 Scoring</li>
+<li><strong>b</strong> Line Plotting</li>
+<li><strong>c</strong> Linear Regression</li>
+<li><strong>d</strong> Random Forest</li>
+<li><strong>e</strong> Natural Breaks Classification</li>
+</ul>
+<p><strong>14.0</strong><br>
+This metric gives us a sense of the dispersion in a data set, but it is not influenced by outliers.</p>
+<ul>
+<li><strong>a</strong> Range</li>
+<li><strong>b</strong> Standard Deviation</li>
+<li><strong>c</strong> Inter-Quartile Range</li>
+<li><strong>d</strong> Dispersion Index</li>
+<li><strong>e</strong> Mean</li>
+</ul>
+<p><strong>15.0</strong><br>
+Map Rock is a 12,000-year stone engraving that that shows a map of which river?</p>
+<ul>
+<li><strong>a</strong> Dyje River</li>
+<li><strong>b</strong> Murray Darling River</li>
+<li><strong>c</strong> Snake River</li>
+<li><strong>d</strong> Nile River</li>
+<li><strong>e</strong> Fraser River</li>
+</ul>
+<p><strong>16.0</strong><br>
+This issue arises when we assume we can take data presented in aggregate and aggregate it again at a higher level.</p>
+<ul>
+<li><strong>a</strong> Modifiable Aerial Unit Problem</li>
+<li><strong>b</strong> Ecological Fallacy</li>
+<li><strong>c</strong> Atomistic Fallacy</li>
+<li><strong>d</strong> Extrapolation Error</li>
+<li><strong>e</strong> Aggregation Error</li>
+</ul>
+<p><strong>17.0</strong><br>
+These chart/plots are best suited for showing the distribution of a continuous variable:</p>
+<ul>
+<li><strong>a</strong> Scatter Plots</li>
+<li><strong>b</strong> Bar Charts</li>
+<li><strong>c</strong> Histograms</li>
+<li><strong>d</strong> Box Plots</li>
+<li><strong>e</strong> Line Charts</li>
+</ul>
+<p><strong>18.0</strong><br>
+These chart/plots are best suited for showing the relationship between two variables:</p>
+<ul>
+<li><strong>a</strong> Histograms</li>
+<li><strong>b</strong> Bar Charts</li>
+<li><strong>c</strong> Scatter Plots</li>
+<li><strong>d</strong> Box Plots</li>
+<li><strong>e</strong> Line Charts</li>
+</ul>
+<p><strong>19.0</strong><br>
+These chart/plots are best suited for showing the frequency distribution of a discrete variable</p>
+<ul>
+<li><strong>a</strong> Histograms</li>
+<li><strong>b</strong> Scatter Plots</li>
+<li><strong>c</strong> Bar Charts</li>
+<li><strong>d</strong> Box Plots</li>
+<li><strong>e</strong> Line Charts</li>
+</ul>
+<p><strong>20.0</strong><br>
+When making a map of global population density, you should use this type of projection to ensure accurate calculations:</p>
+<ul>
+<li><strong>a</strong> Equidistant Azimuthal</li>
+<li><strong>b</strong> Conformal Conic</li>
+<li><strong>c</strong> Equal Area</li>
+<li><strong>d</strong> Universal Transverse Mercator</li>
+<li><strong>e</strong> Conformal Cylindrical</li>
+</ul>
+<p><strong>21.0</strong><br>
+Dr.&nbsp;John Snow’s analysis of the 1854 cholera outbreak in London was a foundational study in the field of:</p>
+<ul>
+<li><strong>a</strong> Cartography</li>
+<li><strong>b</strong> Epistemology</li>
+<li><strong>c</strong> Epidemiology</li>
+<li><strong>d</strong> Ecology</li>
+<li><strong>e</strong> GIS</li>
+</ul>
+</section>
+<section id="true-false" class="level2">
+<h2 class="anchored" data-anchor-id="true-false">True False</h2>
+<p>Type the letter corresponding to you choice on your answer sheet. <strong>Do not</strong> type out the full word, only type the letter corresponding to the answer. Answers are not case sensitive.</p>
+<p><strong>22.0</strong><br>
+Cartography originated in Europe.</p>
+<ul>
+<li><strong>a</strong> False</li>
+<li><strong>b</strong> True</li>
+</ul>
+<p><strong>23.0</strong><br>
+The first computer based geographic information system was invented in the United States.</p>
+<ul>
+<li><strong>a</strong> False</li>
+<li><strong>b</strong> True</li>
+</ul>
+<p><strong>24.0</strong><br>
+Neural Networks are a type of unsupervised classification method.</p>
+<ul>
+<li><strong>a</strong> False</li>
+<li><strong>b</strong> True</li>
+</ul>
+<p><strong>25.0</strong><br>
+K-means is a type of unsupervised classification method.</p>
+<ul>
+<li><strong>a</strong> True</li>
+<li><strong>b</strong> False</li>
+</ul>
+<p><strong>26.0</strong><br>
+Box plots are well suited for looking at the spread of values within different classes.</p>
+<ul>
+<li><strong>a</strong> True</li>
+<li><strong>b</strong> False</li>
+</ul>
+<p><strong>27.0</strong><br>
+Everything is related to everything else, but farther things are more closely related than nearer things.</p>
+<ul>
+<li><strong>a</strong> False</li>
+<li><strong>b</strong> True</li>
+</ul>
+<p><strong>28.0</strong><br>
+Tobler’s law applies to spatial patterns, but it does not apply to temporal patterns.</p>
+<ul>
+<li><strong>a</strong> False</li>
+<li><strong>b</strong> True</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
